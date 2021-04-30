@@ -1,0 +1,212 @@
+// Variables
+
+$primary: #c01d0c; // Performance Red
+$secondary: #a2a288; // Sand Beige
+
+$enable-rounded: false;
+$enable-negative-margins: true;
+$line-height-base: 1.75;
+$line-height-sm: 1.25;
+$line-height-lg: 2.25;
+
+$canvas-padding: 2.5rem;
+$aside-padding: 1.25rem;
+$header-image-margin: $canvas-padding * -1;
+$menu-item-padding: $canvas-padding + $aside-padding;
+$menu-item-margin: $menu-item-padding * -1;
+
+// Bootstrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Styling
+
+body {
+    background-image: url("../images/jungle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Oxygen, sans-serif;
+    font-weight: 500;
+    #canvas {
+        background: $white;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+        backdrop-filter: blur(0.25rem);
+        -webkit-backdrop-filter: blur(0.25rem);
+        margin: 0 auto;
+        padding: 0 $canvas-padding;
+    }
+}
+
+header {
+    margin-left: $header-image-margin;
+    img {
+        border-right: 0.25rem solid $secondary;
+        border-bottom: 0.25rem solid $secondary;
+        border-bottom-right-radius: 2em;
+    }
+}
+
+aside {
+    padding: 2.5rem $aside-padding;
+    .sidebar-element {
+        margin-bottom: 2.5rem;
+        h3 {
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+        .divider {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5rem;
+            height: 0.25rem;
+            background-color: $secondary;
+            width: 50%;
+        }
+        nav {
+            .primary-menu {
+                &-element {
+                    margin-bottom: 1rem;
+                    margin-left: $menu-item-margin;
+                    a {
+                        display: block;
+                        color: $body-color;
+                        background-color: rgba(255, 255, 255, 0.75);
+                        backdrop-filter: blur(0.25rem);
+                        -webkit-backdrop-filter: blur(0.25rem);
+                        padding: 0.5rem;
+                        padding-left: $menu-item-padding;
+                        border-bottom-right-radius: 1rem;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: $secondary;
+                            color: $white;
+                        }
+                    }
+                    &-active {
+                        a {
+                            background-color: $secondary;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .secondary-menu {
+                margin-bottom: 1rem;
+                &-element {
+                    a {
+                        color: $body-color;
+                        text-decoration: none;
+                        padding-left: 0.5rem;
+                        border-left: 0.25rem solid $secondary;
+                        &:hover {
+                            color: $body-color;
+                            border-color: $primary;
+                        }
+                    }
+                    &-active {
+                        a {
+                            border-color: $primary;
+                            &:hover {
+                                color: $body-color;
+                                border-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .leasing {
+            .call-to-action {
+                margin-top: 1.25rem;
+                p {
+                    margin: 0;
+                }
+                a {
+                    display: block;
+                    background: $primary;
+                    color: $white;
+                    padding: 0.5rem;
+                    padding-left: $menu-item-padding;
+                    margin-left: $menu-item-margin;
+                    border-bottom-right-radius: 1rem;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: darken($color: $primary, $amount: 10);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    article {
+        border: 0.25rem solid $secondary;
+        border-top: none;
+        border-left: 0.5rem solid $secondary;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(0.25rem);
+        -webkit-backdrop-filter: blur(0.25rem);
+        border-bottom-right-radius: 2rem;
+        padding: 2.5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        *:last-child {
+            margin: 0;
+        }
+        h1 {
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            .divider {
+                width: 25%;
+                background-color: $secondary;
+                height: 0.25rem;
+                margin-top: 2.5rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .card {
+            background-color: $white;
+            border-bottom-right-radius: 2rem;
+            width: 25rem;
+            margin-bottom: 1.25rem;
+            &-left {
+                float: left;
+                margin-left: -7.75rem;
+                margin-right: 1.25rem;
+            }
+            &-right {
+                float: right;
+                margin-right: -7.75rem;
+                margin-left: 1.25rem;
+            }
+        }
+    }
+    footer {
+        @include make-row();
+        color: $white;
+        font-size: 75%;
+        margin-top: 1.25rem;
+        margin-right: 7rem;
+        margin-bottom: 1.25rem;
+        margin-left: 5rem;
+        .copyright {
+            @include make-col(9);
+        }
+        nav {
+            @include make-col(3);
+            text-align: right;
+            a {
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
