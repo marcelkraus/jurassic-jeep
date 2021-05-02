@@ -1,3 +1,35 @@
-index:
-    path: /
+base-vehicle:
+    path: /basisfahrzeug
+    controller: App\Controller\StaticContentController::baseVehicle
+
+contact:
+    path: /kontakt
+    controller: App\Controller\StaticContentController::contact
+
+equipment:
+    path: /ausstattung
+    controller: App\Controller\StaticContentController::equipment
+
+gallery:
+    path: /bildergalerie
+    controller: App\Controller\StaticContentController::gallery
+
+history:
+    path: /history
     controller: App\Controller\StaticContentController::history
+
+imprint:
+    path: /impressum
+    controller: App\Controller\LegalContentController::imprint
+
+leasing:
+    path: /mietangebote
+    controller: App\Controller\StaticContentController::leasing
+    
+privacy:
+    path: /datenschutz
+    controller: App\Controller\LegalContentController::privacy
+
+terms-of-use:
+    path: /agb
+    controller: App\Controller\LegalContentController::termsOfUse

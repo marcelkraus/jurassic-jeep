@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Bildergalerie &middot; {{ parent() }}
+{% endblock %}
+
+{% block navigation %}
+    {% set activeNavigationElement = 'gallery' %}
+    {{ parent() }}
+{% endblock %}

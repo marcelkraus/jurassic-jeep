@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Das Basisfahrzeug &middot; {{ parent() }}
+{% endblock %}
+
+{% block navigation %}
+    {% set activeNavigationElement = 'baseVehicle' %}
+    {{ parent() }}
+{% endblock %}

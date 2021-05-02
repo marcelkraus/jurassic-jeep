@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Mietangebote &middot; {{ parent() }}
+{% endblock %}
+
+{% block navigation %}
+    {% set activeNavigationElement = 'leasing' %}
+    {{ parent() }}
+{% endblock %}

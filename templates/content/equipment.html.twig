@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Die Ausstattung &middot; {{ parent() }}
+{% endblock %}
+
+{% block navigation %}
+    {% set activeNavigationElement = 'equipment' %}
+    {{ parent() }}
+{% endblock %}
