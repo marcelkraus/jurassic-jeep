@@ -1,19 +1,126 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+<!doctype html>
+<html lang="en">
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Jurassic Jeep: Der überlebende Jeep Wrangler Sahara #16 des „Jurassic Park“</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="canvas">
+            <header>
+                <img src="images/twins.jpg" class="img-fluid" />
+            </header>
+            <div class="row">
+                <div class="col-3">
+                    <aside>
+                        <section class="sidebar-element">
+                            <nav>
+                                <ul class="list-unstyled primary-menu">
+                                    <li class="primary-menu-element primary-menu-element-active"><a href="#">Historie des Jeep</a></li>
+                                    <li class="primary-menu-element"><a href="#">Basisfahrzeug</a></li>
+                                    <li class="primary-menu-element"><a href="#">Ausstattung</a></li>
+                                    <ul class="list-unstyled secondary-menu">
+                                        <li class="secondary-menu-element secondary-menu-element-active"><a href="#">Die Lackierung</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Die Antenne</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Die Stoßstangen</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Die Nebelleuchten</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Der Lampenbügel</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Das Softtop</a></li>
+                                        <li class="secondary-menu-element"><a href="#">Das Zubehör</a></li>
+                                    </ul>
+                                    </li>
+                                    <li class="primary-menu-element"><a href="#">Bildergalerie</a></li>
+                                    <li class="primary-menu-element"><a href="#">Kontakt</a></li>
+                                </ul>
+                                <div class="divider"></div>
+                            </nav>
+                        </section>
+                        <section class="sidebar-element">
+                            <div class="leasing">
+                                <h3 class="h5">Jeep selber erleben</h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                                <div class="call-to-action">
+                                    <a href="#">Jetzt mieten</a>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                        </section>
+                        <section class="sidebar-element">
+                            <div class="social">
+                                <h3 class="h5">Folge der #16</h3>
+                                <ul class="list-unstyled ">
+                                    <li class=""><i class="bi-instagram"></i>&nbsp;Instagram</li>
+                                    <li class=""><i class="bi-facebook"></i>&nbsp;Facebook</li>
+                                    <li class=""><i class="bi-twitter"></i>&nbsp;Twitter</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+                <div class="col-9">
+                    <main>
+                        <article>
+                            <h1>
+                                Die Historie unseres Jeep
+                                <div class="divider"></div>
+                            </h1>
+                            <h2 class="h5">Der Niedergang der Isla Nublar</h2>
+                            <p>Die Historie des ersten Jurassic Park auf der Isla Nublar, 90 Meilen südwestlich von Costa Rica, ist aus den Nachrichten und den Geschichtsbüchern bekannt. Vor fast 30 Jahren kam es am 11. und 12. Juni 1993, kurz vor der geplanten Öffnung des Parks, zur größten Katastrophe in der viel zu kurzen Geschichte des revolutionären Urzeit-Zoos.</p>
+                            <div class="card card-left">
+                                <img src="images/plate.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Die #16 kennzeichnet den Jeep Wrangler von Ed Regis, ehemaligem PR-Chef des „Jurassic Park“.</p>
+                                </div>
+                            </div>
+                            <p>Über die Hintergründe des heute als „Isla Nublar Incident“ bezeichneten Vorfalls ist der Öffentlichkeit nur wenig bekannt. Klar ist nur, dass es zu einem Zusammenbruch der Stromversorgung und einem daraus folgenden Ausbruch der Dinosaurier auf der Insel kam. Es wird jedoch spekuliert, dass Sabotage der maßgebliche Grund für diesen Zwischenfall war. Das tragische Unglück forderte zwei Todesopfer und führte zum schleichenden Niedergang der InGen Corporation und John Hammond, dem Visionär hinter Jurassic Park.</p>
+                            <p>Bis zur Übernahme durch die Masrani Group im Jahre 1998 wurde es still um Isla Nublar. Was dann geschah, ist hinreichend bekannt: Die Jurassic World wurde gebaut und eröffnet, die Besucherzahlen explodierten. Der mittlerweile verstorbene John Hammond wäre stolz gewesen zu sehen, was aus seiner Vision geworden ist. Doch das Schicksal schlug ein zweites Mal zu: Auch die Jurassic World konnte der Natur auf lange Sicht nicht trotzen. Heute ist Isla Nublar ein verlassener, toter Ort - der erloschen geglaubte Vulkan Mount Sibo hat alle Spuren des ersten und zweiten Parks unter sich begraben.</p>
+                            <h2 class="h5">Die Fahrzeuge des Jurassic Park</h2>
+                            <p>Im Rahmen der Konstruktion des Jurassic Park wurden von der InGen Corporation mindestens fünf Jeep Wrangler Sahara des Modelljahres 1993 bestellt. Im Gegensatz zu den elektrisch auf einem Streckensystem betriebenen Ford Explorer, die als Besucherfahrzeuge dienten, wurden die Jeep Wrangler nur für die interne Nutzung im Park verwendet.</p>
+                            <div class="card card-right">
+                                <img src="images/number.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Die #16 kennzeichnet den Jeep Wrangler von Ed Regis, ehemaligem PR-Chef des „Jurassic Park“.</p>
+                                </div>
+                            </div>
+                            <p>Besonderes Merkmal der Fahrzeuge von Jeep war die Lackierung im rot/beigen Farbmuster. Dieses wurde ausgewählt, da insbesondere die Triceratops die Fahrzeuge nicht mehr so deutlich wahrnehmen konnten und aus diesem Grund deutlich seltener angriffen. Zur Kommunikation mit dem Kontrollraum des Parks dient ein gewöhnliches CB-Funkgerät.</p>
+                            <p>Im Gegensatz zur weitläufigen Meinung waren die Nummern auf den Fahrzeugen nicht durchnummeriert. Heute sind zwei Ford Explorer (04, 05) und fünf Jeep Wrangler (10, 12, 16, 18, 29) bekannt, von denen die meisten mittlerweile als verschollen gelten bzw. beim Ausbruch des Mount Sibo zerstört wurden.</p>
+                            <p>Über die Hintergründe des heute als „Isla Nublar Incident“ bezeichneten Vorfalls ist der Öffentlichkeit nur wenig bekannt. Klar ist nur, dass es zu einem Zusammenbruch der Stromversorgung und einem daraus folgenden Ausbruch der Dinosaurier auf der Insel kam. Es wird jedoch spekuliert, dass Sabotage der maßgebliche Grund für diesen Zwischenfall war. Das tragische Unglück forderte zwei Todesopfer und führte zum schleichenden Niedergang der InGen Corporation und John Hammond, dem Visionär hinter Jurassic Park.</p>
+                            <h2 class="h5">Über unseren Jeep</h2>
+                            <p>Unser Fahrzeug mit der Nummer 16 wurde nach Ausrüstung und Lackierung im Mai 1993 nach Isla Nublar verschifft und war für den persönlichen Gebrauch durch den PR-Chefes des Parks, Ed Regis, reserviert. Zum Zeitpunkt des Zwischenfalls befand sich Ed Regis nicht auf der Insel und das Fahrzeug in einer überdachten Parkanlage an den Docks des Parks.</p>
+                            <div class="card card-left">
+                                <img src="images/gate.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Das Material des ehemaligen Tor des „Jurassic Park“ wurde auch für die „Jurassic World“ verwendet.</p>
+                                </div>
+                            </div>
+                            <p>Das Fahrzeug wurde im Zuge der Aufräumarbeiten sichergestellt und zum Festland verschifft. Die angespannte finanzielle Lage der InGen Corporation machte es erforderlich, alle Firmengüter mit einem gewissen Restwert zu veräußern. Warum dieses Schicksal den Fahrzeugen #18 und #29, die sich in der Tiefgarage des Besucherzentrums des Parks befanden, verwehrt blieb, ist nicht bekannt. Beide Fahrzeuge wurden im späteren Verlauf der Geschichte zerstört.</p>
+                            <p>Über diverse Quellen gelang der Jeep Wrangler, von seiner Lackierung und den Aufbauten befreit, in den regulären Verkauf. Glücklicherweise blieb dem Fahrzeug aber eine zu grobe Nutzung im Gelände erspart, woraus der gute Allgemeinzustand am heutigen Tage resultiert. Im Dezember 2018 wurde das Fahrzeug dann an einen Fan des Jurassic Park verkauft, der, drei Jahre nach dem Niedergang von Jurassic World, das Fahrzeug in seinen ursprünglichen Zustand versetzte.</p>
+                            <p>Das heute als „Jurassic Jeep“ bezeichnete Fahrzeug kam im April 2021 durch einen glücklichen Zufall in unsere Hände. Wir werden seinen Zustand in Ehren halten und freue mich, die Geschichte dieses besonderen Jeep Wrangler an die nächsten Generationen weiterzutragen.</p>
+                        </article>
+                        <footer>
+                            <section class="copyright">
+                                &copy; 2021 Marcel Kraus, Erftstadt.<br />
+                                „Jurassic Park“ is a Registered Trademark of Universal Studios and Amblin Entertainment, Inc.
+                            </section>
+                            <nav>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#">Impressum</a></li>
+                                    <li class="list-inline-item"><a href="#">Datenschutz</a></li>
+                                    <li class="list-inline-item"><a href="#">AGB</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
