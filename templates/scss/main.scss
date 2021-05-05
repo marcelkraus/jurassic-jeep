@@ -157,6 +157,17 @@ main {
         *:last-child {
             margin: 0;
         }
+        b {
+            color: $primary;    
+        }
+        hr {
+            color: $secondary;
+            margin: 2.5rem;
+        }
+        sup {
+            color: $primary;
+            font-weight: bold;
+        }
         h1 {
             font-weight: 300;
             text-align: center;
@@ -169,6 +180,22 @@ main {
                 margin-left: auto;
                 margin-right: auto;
             }
+        }
+        h4 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h5 {
+            margin-top: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .table-responsive {
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        th, td {
+            // At the moment, only used on `leasing` page.
+            width: 25%;
         }
         .card {
             background-color: $white;
