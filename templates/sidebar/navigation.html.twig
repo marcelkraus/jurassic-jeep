@@ -10,17 +10,19 @@
             <li class="primary-menu-element {% if activeNavigationElement == 'equipment' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('equipment') }}">Die Ausstattung</a>
             </li>
-        </ul>
-        <ul class="list-unstyled secondary-menu">
-            <li class="secondary-menu-element secondary-menu-element-active"><a href="#">Die Lackierung</a></li>
-            <li class="secondary-menu-element"><a href="#">Die Antenne</a></li>
-            <li class="secondary-menu-element"><a href="#">Die Stoßstangen</a></li>
-            <li class="secondary-menu-element"><a href="#">Die Nebelleuchten</a></li>
-            <li class="secondary-menu-element"><a href="#">Der Lampenbügel</a></li>
-            <li class="secondary-menu-element"><a href="#">Das Softtop</a></li>
-            <li class="secondary-menu-element"><a href="#">Das Zubehör</a></li>
-        </ul>
-        <ul class="list-unstyled primary-menu">
+        {% if activeNavigationElement == 'equipment' %}
+            </ul>
+            <ul class="list-unstyled secondary-menu">
+                <li class="secondary-menu-element secondary-menu-element-active"><a href="#">Die Lackierung</a></li>
+                <li class="secondary-menu-element"><a href="#">Die Antenne</a></li>
+                <li class="secondary-menu-element"><a href="#">Die Stoßstangen</a></li>
+                <li class="secondary-menu-element"><a href="#">Die Nebelleuchten</a></li>
+                <li class="secondary-menu-element"><a href="#">Der Lampenbügel</a></li>
+                <li class="secondary-menu-element"><a href="#">Das Softtop</a></li>
+                <li class="secondary-menu-element"><a href="#">Das Zubehör</a></li>
+            </ul>
+            <ul class="list-unstyled primary-menu">
+        {% endif %}
             <li class="primary-menu-element {% if activeNavigationElement == 'gallery' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('gallery') }}">Bildergalerie</a>
             </li>
