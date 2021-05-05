@@ -17,7 +17,7 @@
                 <img src="images/twins.jpg" class="img-fluid" />
             </header>
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3">
                     <aside>
                         {% block navigation %}
                             {% include 'sidebar/navigation.html.twig' %}
@@ -30,7 +30,7 @@
                         {% endblock %}
                     </aside>
                 </div>
-                <div class="col-9">
+                <div class="col-lg-9">
                     <main>
                         {% block article %}
                             <article>
@@ -38,16 +38,19 @@
                             </article>
                         {% endblock %}
                         <footer>
-                            <section class="copyright">
-                                &copy; 2021 Marcel Kraus, Erftstadt.
-                            </section>
-                            <nav>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
-                                    <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                    <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
-                                </ul>
-                            </nav>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    &copy; 2021 Marcel Kraus, Erftstadt.
+                                </div>
+                                <div class="col-lg-5">
+                                <nav>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
+                                        <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
+                                        <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </footer>
                     </main>
                 </div>
