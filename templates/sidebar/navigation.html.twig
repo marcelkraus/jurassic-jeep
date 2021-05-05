@@ -2,13 +2,13 @@
     <nav>
         <ul class="list-unstyled primary-menu">
             <li class="primary-menu-element {% if activeNavigationElement == 'history' %}primary-menu-element-active {% endif %}">
-                <a href="{{ path('history') }}">Die Historie der #16</a>
+                <a href="{{ path('history') }}">Historie der #16</a>
             </li>
             <li class="primary-menu-element {% if activeNavigationElement == 'baseVehicle' %}primary-menu-element-active {% endif %}">
-                <a href="{{ path('base-vehicle') }}">Das Basisfahrzeug</a>
+                <a href="{{ path('base-vehicle') }}">Basisfahrzeug</a>
             </li>
             <li class="primary-menu-element {% if activeNavigationElement == 'equipment' %}primary-menu-element-active {% endif %}">
-                <a href="{{ path('equipment') }}">Die Ausstattung</a>
+                <a href="{{ path('equipment') }}">Sonderausstattung</a>
             </li>
         {% if activeNavigationElement == 'equipment' %}
             </ul>
