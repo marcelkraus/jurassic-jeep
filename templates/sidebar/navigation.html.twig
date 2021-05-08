@@ -1,20 +1,16 @@
-{% if activeNavigationElement is not defined %}
-    {% set activeNavigationElement = "" %}
-{% endif %}
-
 <section class="sidebar-element">
     <nav>
         <ul class="list-unstyled primary-menu">
-            <li class="primary-menu-element {% if activeNavigationElement == 'history' %}primary-menu-element-active {% endif %}">
-                <a href="{{ path('history') }}">Historie der #16</a>
+            <li class="primary-menu-element {% if activeNavElement == 'history' %}primary-menu-element-active {% endif %}">
+                <a href="{{ path('history') }}">Historie</a>
             </li>
-            <li class="primary-menu-element {% if activeNavigationElement == 'baseVehicle' %}primary-menu-element-active {% endif %}">
+            <li class="primary-menu-element {% if activeNavElement == 'baseVehicle' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('base-vehicle') }}">Basisfahrzeug</a>
             </li>
-            <li class="primary-menu-element {% if activeNavigationElement == 'equipment' %}primary-menu-element-active {% endif %}">
+            <li class="primary-menu-element {% if activeNavElement == 'equipment' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('equipment') }}">Sonderausstattung</a>
             </li>
-        {% if activeNavigationElement == 'equipment' %}
+        {% if activeNavElement == 'equipment' %}
             </ul>
             <ul class="list-unstyled secondary-menu">
                 <li class="secondary-menu-element secondary-menu-element-active"><a href="#">Die Lackierung</a></li>
@@ -27,10 +23,10 @@
             </ul>
             <ul class="list-unstyled primary-menu">
         {% endif %}
-            <li class="primary-menu-element {% if activeNavigationElement == 'gallery' %}primary-menu-element-active {% endif %}">
+            <li class="primary-menu-element {% if activeNavElement == 'gallery' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('gallery') }}">Bildergalerie</a>
             </li>
-            <li class="primary-menu-element {% if activeNavigationElement == 'contact' %}primary-menu-element-active {% endif %}">
+            <li class="primary-menu-element {% if activeNavElement == 'contact' %}primary-menu-element-active {% endif %}">
                 <a href="{{ path('contact') }}">Kontakt</a>
             </li>
         </ul>

@@ -1,80 +1,81 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:300,500,700">
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>{% block title %} Jurassic Jeep: Der überlebende Jeep Wrangler Sahara #16 des „Jurassic Park“{% endblock %}</title>
-</head>
-
-<body>
-    <div class="container">
-        <div id="canvas">
-            <header>
-                <div class="header-menu">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <a href="{{ path('homepage') }}"><img src="images/logo.png" /></a>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="d-none d-sm-block">
-                                <div class="social">
-                                    <a href="https://www.youtube.com/channel/UCDJXUi8NY3lgLxh1_fcDNog"><i class="bi-youtube"></i></a>
-                                    <a href="https://www.instagram.com/jpjeep16/"><i class="bi-instagram"></i></a>
-                                    <a href="https://www.facebook.com/jurassicjeep.de"><i class="bi-facebook"></i></a>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }} &middot; Jurassic Jeep</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="{{ author | default('Marcel Kraus, Erftstadt') }}"/>
+        <meta name="robots" content="{{ robots | default('index,follow') }}"/>
+        <meta name="description" content="{{ description }}"/>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:300,500,700">
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="canvas">
+                <header>
+                    <div class="header-menu">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="{{ path('homepage') }}"><img src="images/logo.png" /></a>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="d-none d-sm-block">
+                                    <div class="social">
+                                        <a href="https://www.youtube.com/channel/UCDJXUi8NY3lgLxh1_fcDNog"><i class="bi-youtube"></i></a>
+                                        <a href="https://www.instagram.com/jpjeep16/"><i class="bi-instagram"></i></a>
+                                        <a href="https://www.facebook.com/jurassicjeep.de"><i class="bi-facebook"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mood-image">
-                    <img src="images/twins.jpg" class="img-fluid" />
-                </div>
-            </header>
-            <div class="row">
-                <div class="col-lg-3">
-                    <aside>
-                        {% block navigation %}
-                            {% include 'sidebar/navigation.html.twig' %}
-                        {% endblock %}
-                        {% block leasing %}
-                            {% include 'sidebar/leasing.html.twig' %}
-                        {% endblock %}
-                        {% block social %}
-                            {% include 'sidebar/social.html.twig' %}
-                        {% endblock %}
-                    </aside>
-                </div>
-                <div class="col-lg-9">
-                    <main>
-                        {% block article %}
-                            <article>
-                                ((Placeholder))
-                            </article>
-                        {% endblock %}
-                        <footer>
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    &copy; 2021 Marcel Kraus, Erftstadt.
+                    <div class="mood-image">
+                        <img src="images/twins.jpg" class="img-fluid" />
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <aside>
+                            {% block navigation %}
+                                {% include 'sidebar/navigation.html.twig' %}
+                            {% endblock %}
+                            {% block leasing %}
+                                {% include 'sidebar/leasing.html.twig' %}
+                            {% endblock %}
+                            {% block social %}
+                                {% include 'sidebar/social.html.twig' %}
+                            {% endblock %}
+                        </aside>
+                    </div>
+                    <div class="col-lg-9">
+                        <main>
+                            {% block article %}
+                                <article>
+                                    ((Placeholder))
+                                </article>
+                            {% endblock %}
+                            <footer>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        &copy; 2021 Marcel Kraus, Erftstadt.
+                                    </div>
+                                    <div class="col-lg-5">
+                                    <nav>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
+                                            <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
+                                            <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
-                                <div class="col-lg-5">
-                                <nav>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
-                                        <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                        <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </footer>
-                    </main>
+                            </footer>
+                        </main>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

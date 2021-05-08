@@ -1,11 +1,11 @@
 {
   "name": "jurassic-jeep",
-  "description": "Homepage of Jurassic Jeep #16, one of the last survivors of the Isla Nublar Incident of 1993.",
+  "description": "Homepage of the „Jurassic Jeep“ with number 16, one of the last survivors of the 1993 Isla Nublar Incident.",
   "version": "1.0.0",
   "keywords": [],
   "author": "Marcel Kraus <git@marcelkraus.de>",
   "license": "MIT",
-  "homepage": "https://www.jurassic-jeep.de",
+  "homepage": "https://www.jurassicjeep.de",
   "repository": {
     "type": "git",
     "url": "https://github.com/marcelkraus/jurassic-jeep.git"

@@ -18,7 +18,7 @@ gallery:
     controller: App\Controller\StaticContentController::gallery
 
 history:
-    path: /history
+    path: /geschichte
     controller: App\Controller\StaticContentController::history
 
 imprint:
