@@ -216,9 +216,9 @@ main {
         b {
             color: $primary;    
         }
-        hr {
-            color: $secondary;
-            margin: 2.5rem;
+        .padded {
+            border-left: 0.1rem solid $secondary;
+            padding-left: 1.25rem;
         }
         sup {
             color: $primary;
