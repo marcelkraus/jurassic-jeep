@@ -27,6 +27,11 @@ class StaticContentController extends AbstractController
         return $this->render('content/gallery.html.twig');
     }
 
+    public function homepage(): Response
+    {
+        return $this->render('content/homepage.html.twig');
+    }
+
     public function history(): Response
     {
         return $this->render('content/history.html.twig');
