@@ -188,6 +188,12 @@ aside {
                 }
             }
         }
+        .social {
+            a {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
     }
 }
 
