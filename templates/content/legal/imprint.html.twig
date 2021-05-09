@@ -30,7 +30,9 @@
         <h2 class="h5">Angaben zum Unternehmen</h2>
         <ul class="list-unstyled">
             <li>Umsatzsteuer Identifikationsnummer (USt-ID): DE176192769</li>
-            <li>AGB: <a href="{{ path('terms-of-use') }}">{{ url('terms-of-use') }}</a></li>
+            {% if ff_leasing_available %}
+                <li>AGB: <a href="{{ path('terms-of-use') }}">{{ url('terms-of-use') }}</a></li>
+            {% endif %}
         </ul>
         <h2 class="h5">Social Media und andere Onlinepräsenzen</h2>
         <p>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile:</p>

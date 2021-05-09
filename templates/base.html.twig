@@ -1,3 +1,5 @@
+{% set ff_leasing_available = false %}
+
 <!DOCTYPE html>
 
 <html lang="de">
@@ -42,9 +44,11 @@
                             {% block navigation %}
                                 {% include 'sidebar/navigation.html.twig' %}
                             {% endblock %}
-                            {% block leasing %}
-                                {% include 'sidebar/leasing.html.twig' %}
-                            {% endblock %}
+                            {% if ff_leasing_available %}
+                                {% block leasing %}
+                                    {% include 'sidebar/leasing.html.twig' %}
+                                {% endblock %}
+                            {% endif %}
                             {% block social %}
                                 {% include 'sidebar/social.html.twig' %}
                             {% endblock %}
@@ -67,7 +71,9 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
                                             <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                            <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
+                                            {% if ff_leasing_available %}
+                                                <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
+                                            {% endif %}
                                         </ul>
                                     </nav>
                                 </div>
