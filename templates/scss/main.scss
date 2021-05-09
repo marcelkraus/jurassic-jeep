@@ -213,12 +213,17 @@ main {
         *:last-child {
             margin: 0;
         }
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
         b {
             color: $primary;    
         }
-        .padded {
-            border-left: 0.1rem solid $secondary;
-            padding-left: 1.25rem;
+        hr {
+            color: $secondary;
+            margin: 2.5rem auto;
+            width: 50%;
         }
         sup {
             color: $primary;
