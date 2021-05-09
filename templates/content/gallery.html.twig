@@ -1,5 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% set title            = 'Schöne Bilder meines Jeep aus „Jurassic Park“' %}
-{% set description      = '' %}
+{% set description      = 'Der „Jurassic Jeep“ entspricht aus jedem Winkel dem originalen Jeep, wie er vor fast 30 Jahren in „Jurassic Park“ auf der Isla Nublar zum Einsatz kam.' %}
 {% set activeNavElement = 'gallery' %}
+
+{% block article %}
+    <article>
+        <h1>
+            Bildergalerie
+            <div class="divider"></div>
+        </h1>
+        <p>Leider befindet sich der Jeep aktuell noch auf der Fähre aus Isla Nublar. Schöne Bilder werden daher in den nächsten Tagen nachgereicht.</p>
+    </article>
+{% endblock %}
