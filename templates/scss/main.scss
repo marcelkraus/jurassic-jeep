@@ -4,10 +4,15 @@ $primary: #c01d0c; // Performance Red
 $secondary: #a2a288; // Sand Beige
 
 $enable-rounded: false;
-$enable-negative-margins: true;
-$line-height-base: 1.75;
 $line-height-sm: 1.25;
+$line-height-base: 1.75;
 $line-height-lg: 2.25;
+
+$h1-font-size: 2.5rem; // 40pt
+$h2-font-size: 1.5rem; // 24pt
+$h3-font-size: 1.25rem; // 20pt
+
+$paragraph-margin-bottom: 1.25rem;
 
 // Bootstrap
 
@@ -50,7 +55,7 @@ header {
             height: 7.5rem;
             @include media-breakpoint-up(lg) {
                 margin-right: 0;
-            } 
+            }
             a {
                 display: flex;
                 align-items: center;
@@ -90,8 +95,7 @@ aside {
     margin: 2.5rem 0;
     .sidebar-element {
         margin: 2.5rem 1.25rem;
-        h3 {
-            font-weight: 700;
+        h2 {
             margin-bottom: 1.25rem;
         }
         .divider {
@@ -106,7 +110,7 @@ aside {
             .primary-menu {
                 margin-left: -1.25rem;
                 @include media-breakpoint-up(lg) {
-                    margin-left: - 3.75rem;
+                    margin-left: -3.75rem;
                 }
                 &-element {
                     margin-bottom: 1.25rem;
@@ -168,9 +172,6 @@ aside {
                 @include media-breakpoint-up(lg) {
                     margin-left: -3.75rem;
                 }
-                p {
-                    margin: 0;
-                }
                 a {
                     display: block;
                     background: $primary;
@@ -180,7 +181,7 @@ aside {
                     border-bottom-right-radius: 1rem;
                     text-decoration: none;
                     @include media-breakpoint-up(lg) {
-                            padding-left: 3.75rem;
+                        padding-left: 3.75rem;
                     }
                     &:hover {
                         background-color: darken($color: $primary, $amount: 10);
@@ -210,31 +211,34 @@ main {
             margin-left: 5rem;
             margin-right: 5rem;
         }
-        *:last-child {
-            margin: 0;
-        }
         a {
             color: $primary;
             text-decoration: none;
         }
         b {
-            color: $primary;    
+            color: $primary;
         }
-        hr {
-            color: $secondary;
-            margin: 2.5rem auto;
-            width: 50%;
+        h2 {
+            margin-top: $paragraph-margin-bottom * 2;
+        }
+        h2, h3 {
+            margin-bottom: $paragraph-margin-bottom;
+        }
+        p:last-child {
+            margin: 0;
         }
         sup {
             color: $primary;
             font-weight: bold;
         }
         h1 {
-            font-weight: 300;
             text-align: center;
             margin-bottom: 2.5rem;
-            .divider {
-                width: 25%;
+            &:after {
+                display: block;
+                content:"";
+                width: 20rem;
+                max-width: 80%;
                 background-color: $secondary;
                 height: 0.25rem;
                 margin-top: 2.5rem;
@@ -242,19 +246,12 @@ main {
                 margin-right: auto;
             }
         }
-        h4 {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        h5 {
-            margin-top: 1.25rem;
-            margin-bottom: 1rem;
-        }
         .table-responsive {
             margin-top: 1.25rem;
             margin-bottom: 1.25rem;
         }
-        th, td {
+        th,
+        td {
             // At the moment, only used on `leasing` page.
             width: 25%;
         }
