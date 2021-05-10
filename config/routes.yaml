@@ -10,7 +10,7 @@ contact:
     controller: App\Controller\StaticContentController::contact
 
 equipment:
-    path: /ausstattung
+    path: /sonderausstattung
     controller: App\Controller\StaticContentController::equipment
 
 gallery:
@@ -18,7 +18,7 @@ gallery:
     controller: App\Controller\StaticContentController::gallery
 
 history:
-    path: /geschichte
+    path: /historie
     controller: App\Controller\StaticContentController::history
 
 imprint:

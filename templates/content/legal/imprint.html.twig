@@ -1,57 +1,60 @@
 {% extends 'base.html.twig' %}
 
 {% set title            = 'Impressum' %}
+{% set robots           = 'noindex,follow' %}
 {% set description      = '' %}
 {% set activeNavElement = '' %}
 
 {% block article %}
     <article>
-        <h1>Impressum</h1>
+        <div class="heading">
+            <h1 class="default">Impressum</h1>
+        </div>
         <p>Die folgenden Adressinformationen werden nur aus Gründen der Rechtssicherheit gegeben. Jeglicher Missbrauch wird entsprechend geahndet.</p>
-        <h2>Diensteanbieter</h2>
+        <h3>Diensteanbieter</h3>
         <p>
             Marcel Kraus<br/>
             Bonner Straße 88<br/>
             50374 Erftstadt<br/>
             Deutschland
         </p>
-        <h2>Kontaktmöglichkeiten</h2>
+        <h3>Kontaktmöglichkeiten</h3>
         <ul class="list-unstyled">
             <li>E-Mail-Adresse: hallo (at) jurassicjeep.de</li>
             <li>Kontaktformular: <a href="{{ path('contact') }}">{{ url('contact') }}</a></li>
         </ul>
-        <h2>Journalistisch-redaktionelle Angebote</h2>
+        <h3>Journalistisch-redaktionelle Angebote</h3>
         <ul class="list-unstyled">
             <li>Inhaltlich verantwortlich: Marcel Kraus (Adresse wie oben)</li>
         </ul>
-        <h2>Angaben zum Unternehmen</h2>
+        <h3>Angaben zum Unternehmen</h3>
         <ul class="list-unstyled">
             <li>Umsatzsteuer Identifikationsnummer (USt-ID): DE176192769</li>
             {% if ff_leasing_available %}
                 <li>AGB: <a href="{{ path('terms-of-use') }}">{{ url('terms-of-use') }}</a></li>
             {% endif %}
         </ul>
-        <h2>Social Media und andere Onlinepräsenzen</h2>
+        <h3>Social Media und andere Onlinepräsenzen</h3>
         <p>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile:</p>
         <ul>
             <li><a href="{{ social_instagram }}">Instagram</a></li>
             <li><a href="{{ social_facebook }}">Facebook</a></li>
             <li><a href="{{ social_youtube }}">YouTube</a></li>
         </ul>
-        <h2>Weitere Nachweise</h2>
+        <h3>Weitere Nachweise</h3>
         <ul class="list-unstyled">
             <li>Logodesign: <a href="http://www.dn-grafik.de">Daniel Niedick (DN Grafik)</a></li>
             <li>Hintergrundbild („Dschungel“): <a href="https://unsplash.com/@yoal_des?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoal Desurmont</a> (<a href="https://unsplash.com/s/photos/jungle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)</li>
             <li>Verwendete Markenzeichen: „Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin’ Entertainment, Inc. Beide Rechteinhaber sind weder Sponsoren, Unterstützer noch offizielle Befürworter dieses Onlineangebots.</li>
         </ul>
-        <h2>Haftungs- und Schutzrechtshinweise</h2>
-        <h3>Haftungsausschluss</h3>
+        <h3>Haftungs- und Schutzrechtshinweise</h3>
+        <h4>Haftungsausschluss</h4>
         <p>Die Inhalte dieses Onlineangebotes wurden sorgfältig und nach meinem aktuellen Kenntnisstand erstellt, dienen jedoch nur der Information und entfalten keine rechtlich bindende Wirkung, sofern es sich nicht um gesetzlich verpflichtende Informationen (z.B. das Impressum, die Datenschutzerklärung, AGB oder verpflichtende Belehrungen von Verbrauchern) handelt. Ich behalte mir vor, die Inhalte vollständig oder teilweise zu ändern oder zu löschen, soweit vertragliche Verpflichtungen unberührt bleiben. Alle Angebote sind freibleibend und unverbindlich.</p>
-        <h3>Links auf fremde Webseiten</h3>
+        <h4>Links auf fremde Webseiten</h4>
         <p>Inhalte fremder Webseiten, auf die ich direkt oder indirekt verweise, liegen außerhalb meines Verantwortungsbereiches und mache ich mir nicht zu Eigen. Für alle Inhalte und insbesondere für Schäden, die aus der Nutzung der in den verlinkten Webseiten aufrufbaren Informationen entstehen, haftet allein der Anbieter der verlinkten Webseiten.</p>
-        <h3>Urheberrechte und Markenrechte</h3>
+        <h4>Urheberrechte und Markenrechte</h4>
         <p>Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte) geschützt. Die Verwendung, Vervielfältigung usw. unterliegt meinen Rechten oder den Rechten der jeweiligen Urheber bzw. Rechteverwalter.</p>
-        <h3>Hinweise auf Rechtsverstöße</h3>
+        <h4>Hinweise auf Rechtsverstöße</h4>
         <p>Solltest du innerhalb unseres Internetauftritts Rechtsverstöße bemerken, bitte ich dich, mich auf diese hinzuweisen. Ich werde rechtswidrige Inhalte und Links nach Kenntnisnahme unverzüglich entfernen.</p>
         <p><small><a href="https://datenschutz-generator.de/?l=de">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a></small></p>
     </article>
