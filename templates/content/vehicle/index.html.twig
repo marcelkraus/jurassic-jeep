@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% set title            = 'Das Basisfahrzeug: Ein 1993er Jeep Wrangler YJ, Modell „Sahara“' %}
+{% set description      = 'Als Basis für meinen Nachbau wurde genau das Modell verwendet, das auch beim Dreh von „Jurassic Park“ zum Einsatz kam: Ein 1993er Jeep Wrangler Sahara.' %}
+{% set activeNavElement = 'vehicle' %}
+{% set activeSubElement = null %}
+
+{% block article %}
+    <article>
+        <div class="heading">
+            <h1>Mein Jeep im Detail</h1>
+            <h2>Mit einem „Sahara“-Modell fing es an</h2>
+        </div>
+        <blockquote class="blockquote">
+            <p>„1992er Jeep Wrangler Sahara, sand-beige.“</p>
+        </blockquote>
+        <p>Mit diesen Worten stellt Gray seinem Bruder Zach das Fahrzeug vor, das beide bei Ihrem Ausflug in die „Jurassic World“ im alten Besucherzentrum des „Jurassic Park“ finden. Und so könnte ich dir auch meinen Jeep vorstellen, denn der Unterschied ist marginal: Er wurde ein paar Monate später gebaut und ist daher ein Modelljahr 1993.</p>
+        {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/zwei-jeep-wrangler-vor-dem-umbau.jpg', alt: 'Zwei Jeep Wrangler, davon ein „Sahara“-Modell, vor dem Umbau in die Jeeps aus „Jurassic Park“', caption: 'Wie Zwillinge: Mein „Sahara“ (rechts) neben dem Jeep, der heute von Florian aus Friesoythe gefahren wird.' } %}
+        <p>Wie würde John Hammond sagen? Für die Verwandlung meines Jeep Wranger Sahara in den „Gas Jeep“ des „Jurassic Park“ wurden keine Kosten gescheut.</p>
+        <p>Es wurde genau das Modell verwendet, dass auch der Filmcrew bei den Dreharbeiten im Jahre 1992 zur Verfügung stand; das macht mein Fahrzeug in Deutschland relativ einzigartig.</p>
+        <p>So lässt sich zwar pontentiell jeder Jeep Wrangler der Modelljahre 1987 bis 1995 (Typ „YJ“) in das markante Arbeitstier des ehemaligen Urzeit-Zoos umbauen, doch nur mit einem entsprechend großen Aufwand.</p>
+        <p>Die „Sahara“-Modell zeichnet sich z.B. dadurch aus, dass spezielle Sitzbezüge und Farben für die Innenraumteile verwendet wurden. So gab es z.B. erst ab Modelljahre 1992 die für den Film authentischen Sitze. Zusammengefasst: Ideale Basisfahrzeuge sind die „Sahara“-Modelle des Jeep Wrangler der Modelljahre 1992 bis 1994.</p>
+        <h3>Wie mein Jeep mich fand</h3>        
+        <p>Direkt vorab: Ich habe meinen Jeep nicht selber gebaut.</p>
+        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/jeep-wrangler-sahara-in-jurassic-park-optik-auf-der-wiese.jpg', alt: 'Jeep Wrangler in komplettem „Jurassic Park“-Look auf einer Wiese', caption: 'Eines der ersten Bilder, das ich vom Vorbesitzer Jörg erhalten habe: Der Jeep in seiner ganzen Pracht.' } %}
+        <p>Seit über zehn Jahren war ich mehr oder weniger intensiv auf der Suche nach einem passenden Basifahrzeug, um nach meinem aktuellen Projekt – ich restauriere einen <a href="https://www.myknight.de" title="Besuche mein anderes Projekt, die Restauration meines 1982er Pontiac Firebird Trans Am">1982er Pontiac Firebird Trans Am</a> – direkt mit einem „Jurassic Park“-Jeep loslegen zu können.</p>
+        <p>Leider ist der deutsche und europäische Markt überschaubar und ein „Sahara“ in gutem Zustand in Deutschland fast nicht zu bekommen – und wenn, dann nur zu exorbitant hohen Preisen. Dennoch hatte ich großes Glück, denn eine Suchanzeige auf eBay-Kleinanzeigen brachte im April 2021 durch Zufall Jörg auf den Plan, der mir seinen geliebten Jeep zum Kauf anbot.</p>
+        <p>Jörg hat bei dem Umbau hervorragende Arbeit geleistet; so war nach der Besichtigung vor Ort sehr schnell klar, dass kein Weg um das Fahrzeug herum führt. So habe ich zugeschlagen und mein Auto im Mai 2021 abgeholt, seit dem halte ich den Jeep in Ehren.</p>
+        <p>Auch wenn mein Jeep bereits vollständig umgebaut wurde: Ein Jeep ist bekanntlich nie fertig. Ich freue mich daher auf die nächsten Jahre und Monate und werde dem Jeep die Aufmerksamkeit zukommen lassen, die er verdient.</p>
+        <h3>Die Ausstattung meines Jeep</h3>
+        <p>Die Informationen zu den speziellen Ausstattungsmerkmalen eines Jeeps aus „Jurassic Park“ sind über das Untermenü in der Navigation erreichbar.</p>
+    </article>
+{% endblock %}

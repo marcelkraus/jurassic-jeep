@@ -251,23 +251,25 @@ main {
                 overflow: hidden;
                 text-align: center;
                 margin-top: 1.25rem;
-                &:before,
-                &:after {
-                    background-color: $secondary;
-                    content: "";
-                    display: inline-block;
-                    height: 0.1rem;
-                    position: relative;
-                    vertical-align: middle;
-                    width: 50%;
-                }
-                &:before {
-                    right: 0.5rem;
-                    margin-left: -50%;
-                }
-                &:after {
-                    left: 0.5rem;
-                    margin-right: -50%;
+                @include media-breakpoint-up(lg) {
+                    &:before,
+                    &:after {
+                        background-color: $secondary;
+                        content: "";
+                        display: inline-block;
+                        height: 0.1rem;
+                        position: relative;
+                        vertical-align: middle;
+                        width: 50%;
+                    }
+                    &:before {
+                        right: 0.5rem;
+                        margin-left: -50%;
+                    }
+                    &:after {
+                        left: 0.5rem;
+                        margin-right: -50%;
+                    }
                 }
             }
         }

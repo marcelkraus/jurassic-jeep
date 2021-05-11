@@ -1,17 +1,6 @@
-homepage:
-    path: /
-    controller: App\Controller\StaticContentController:homepage
-base-vehicle:
-    path: /basisfahrzeug
-    controller: App\Controller\StaticContentController::baseVehicle
-
 contact:
     path: /kontakt
     controller: App\Controller\StaticContentController::contact
-
-equipment:
-    path: /sonderausstattung
-    controller: App\Controller\StaticContentController::equipment
 
 gallery:
     path: /bildergalerie
@@ -21,6 +10,10 @@ history:
     path: /historie
     controller: App\Controller\StaticContentController::history
 
+homepage:
+    path: /
+    controller: App\Controller\StaticContentController:homepage
+
 imprint:
     path: /impressum
     controller: App\Controller\LegalContentController::imprint
@@ -28,7 +21,7 @@ imprint:
 leasing:
     path: /mietangebote
     controller: App\Controller\StaticContentController::leasing
-    
+
 privacy:
     path: /datenschutz
     controller: App\Controller\LegalContentController::privacy
@@ -36,3 +29,47 @@ privacy:
 terms-of-use:
     path: /agb
     controller: App\Controller\LegalContentController::termsOfUse
+
+vehicle:
+    path: /fahrzeug
+    controller: App\Controller\VehicleContentController::index
+
+vehicle_accessories:
+    path: /fahrzeug/zubehör
+    controller: App\Controller\VehicleContentController::index
+
+vehicle_cb_radio:
+    path: /fahrzeug/cb-funkgeraet-mit-antenne
+    controller: App\Controller\VehicleContentController::index
+
+vehicle_fog_lights:
+    path: /fahrzeug/nebelscheinwerfer
+    controller: App\Controller\VehicleContentController::fogLights
+
+vehicle_lightbar:
+    path: /fahrzeug/lampenbügel
+    controller: App\Controller\VehicleContentController::index
+
+vehicle_paintjob:
+    path: /fahrzeug/lackierung
+    controller: App\Controller\VehicleContentController::paintjob
+
+vehicle_panels:
+    path: /fahrzeug/verkleidungen
+    controller: App\Controller\VehicleContentController::panels
+
+vehicle_rims:
+    path: /fahrzeug/felgen
+    controller: App\Controller\VehicleContentController::rims
+
+vehicle_seats:
+    path: /fahrzeug/sitze-und-teppiche
+    controller: App\Controller\VehicleContentController::seats
+
+vehicle_softtop:
+    path: /fahrzeug/softtop-mit-halbtueren
+    controller: App\Controller\VehicleContentController::softtop
+
+vehicle_winch:
+    path: /fahrzeug/winde
+    controller: App\Controller\VehicleContentController::index
