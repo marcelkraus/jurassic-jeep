@@ -31,6 +31,7 @@ body {
     font-family: Oxygen, sans-serif;
     font-weight: 500;
     #canvas {
+        min-height: 100vh;
         background: $white;
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.25));
         backdrop-filter: blur(0.25rem);
@@ -215,9 +216,6 @@ main {
         a {
             color: $primary;
             text-decoration: none;
-        }
-        b {
-            color: $primary;
         }
         h3, h4 {
             margin-bottom: $paragraph-margin-bottom;
