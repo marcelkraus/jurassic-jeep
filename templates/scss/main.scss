@@ -217,6 +217,19 @@ main {
             color: $primary;
             text-decoration: none;
         }
+        .img-thumbnail {
+            border-bottom-right-radius: 2rem;
+        }
+        .inset-left {
+            @include media-breakpoint-up(lg) {
+                margin-left: -7.75rem !important;
+            }
+        }
+        .inset-right {
+            @include media-breakpoint-up(lg) {
+                margin-right: -7.75rem !important;
+            }
+        }
         h3, h4 {
             margin-bottom: $paragraph-margin-bottom;
         }
