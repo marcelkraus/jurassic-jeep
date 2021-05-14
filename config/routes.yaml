@@ -3,11 +3,11 @@ contact:
     controller: App\Controller\StaticContentController::contact
 
 gallery:
-    path: /bildergalerie
+    path: /bilder-des-jeep
     controller: App\Controller\StaticContentController::gallery
 
 history:
-    path: /historie
+    path: /die-historie-des-jeep
     controller: App\Controller\StaticContentController::history
 
 homepage:
@@ -19,7 +19,7 @@ imprint:
     controller: App\Controller\LegalContentController::imprint
 
 leasing:
-    path: /mietangebote
+    path: /den-jeep-mieten
     controller: App\Controller\StaticContentController::leasing
 
 privacy:
@@ -31,45 +31,45 @@ terms-of-use:
     controller: App\Controller\LegalContentController::termsOfUse
 
 vehicle:
-    path: /fahrzeug
+    path: /der-jeep-im-detail
     controller: App\Controller\VehicleContentController::index
 
 vehicle_accessories:
-    path: /fahrzeug/zubehör
+    path: /der-jeep-im-detail/das-zubehör
     controller: App\Controller\VehicleContentController::index
 
 vehicle_cb_radio:
-    path: /fahrzeug/cb-funkgeraet-mit-antenne
+    path: /der-jeep-im-detail/das-cb-funkgeraet-mit-antenne
     controller: App\Controller\VehicleContentController::index
 
 vehicle_fog_lights:
-    path: /fahrzeug/nebelscheinwerfer
+    path: /der-jeep-im-detail/die-nebelscheinwerfer
     controller: App\Controller\VehicleContentController::fogLights
 
 vehicle_lightbar:
-    path: /fahrzeug/lampenbügel
+    path: /der-jeep-im-detail/der-lampenbuegel
     controller: App\Controller\VehicleContentController::index
 
 vehicle_paintjob:
-    path: /fahrzeug/lackierung
+    path: /der-jeep-im-detail/die-lackierung
     controller: App\Controller\VehicleContentController::paintjob
 
 vehicle_panels:
-    path: /fahrzeug/verkleidungen
+    path: /der-jeep-im-detail/die-verkleidungen
     controller: App\Controller\VehicleContentController::panels
 
 vehicle_rims:
-    path: /fahrzeug/felgen
+    path: /der-jeep-im-detail/die-felgen-und-reifen
     controller: App\Controller\VehicleContentController::rims
 
 vehicle_seats:
-    path: /fahrzeug/sitze-und-teppiche
+    path: /der-jeep-im-detail/die-sitze-und-teppiche
     controller: App\Controller\VehicleContentController::seats
 
 vehicle_softtop:
-    path: /fahrzeug/softtop-mit-halbtueren
+    path: /der-jeep-im-detail/das-softtop-mit-halbtueren
     controller: App\Controller\VehicleContentController::softtop
 
 vehicle_winch:
-    path: /fahrzeug/winde
+    path: /der-jeep-im-detail/die-seilwinde
     controller: App\Controller\VehicleContentController::index
