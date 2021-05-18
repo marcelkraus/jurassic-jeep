@@ -1,6 +1,7 @@
 {% set social_instagram = "https://www.instagram.com/jpjeep16/" %}
 {% set social_facebook  = "https://www.facebook.com/jurassicjeep.de" %}
 {% set social_youtube   = "https://www.youtube.com/channel/UCDJXUi8NY3lgLxh1_fcDNog" %}
+{% set mood_image_url   = url('homepage') ~ (mood_image_src | default('/images/jeep-wrangler-im-naturparkzentrum-gymnicher-muehle-in-erftstadt.jpg') | replace({'/images': 'images'})) %}
 
 {% set ff_leasing_available = false %}
 
@@ -56,7 +57,7 @@
                         </div>
                     </div>
                     <div class="mood-image">
-                        <img src="/images/jeep-wrangler-im-naturparkzentrum-gymnicher-muehle-in-erftstadt.jpg" alt="Ein Jeep Wrangler Sahara in „Jurassic Park“-Optik im Naturparkzentrum Gymnicher Mühle in Erftstadt" class="img-fluid" />
+                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt | default('Ein Jeep Wrangler Sahara in „Jurassic Park“-Optik im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}" class="img-fluid" />
                     </div>
                 </header>
                 <div class="row">
