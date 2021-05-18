@@ -35,6 +35,14 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="de_DE">
+        <meta property="og:url" content="{{ url(app.request.get('_route')) }}">
+        <meta property="og:site_name" content="Jurassic Jeep">
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:image" content="{{ mood_image_url }}">
+        <meta property="og:image:alt" content="{{ mood_image_alt | default('Ein Jeep Wrangler Sahara in „Jurassic Park“-Optik im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}">
+        <meta property="og:description" content="{{ description }}">
     </head>
     <body>
         <div class="container">
