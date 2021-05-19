@@ -79,6 +79,9 @@
                                     {% include 'sidebar/leasing.html.twig' %}
                                 {% endblock %}
                             {% endif %}
+                            {% block tracking %}
+                                {% include 'sidebar/tracking.html.twig' %}
+                            {% endblock %}
                             {% block social %}
                                 {% include 'sidebar/social.html.twig' %}
                             {% endblock %}
