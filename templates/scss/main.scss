@@ -320,6 +320,9 @@ main {
             margin-left: 5rem;
             margin-right: 7rem;
         }
+        p {
+            margin: 0;
+        }
         nav {
             @include media-breakpoint-up(lg) {
                 text-align: right;
