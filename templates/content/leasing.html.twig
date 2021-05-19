@@ -2,26 +2,31 @@
 
 {% set title            = 'Jetzt mieten und den Jeep ganz exklusiv erleben' %}
 {% set description      = 'Spezielle Mietangebote ermöglichen es, den „Jurassic Jeep“ ganz exklusiv zu erleben: Sei es auf einer privaten Tour oder für gewerbliche Zwecke.' %}
+{% set mood_image_src   = '/images/isla-nublar-kennzeichen-des-jeep-wrangler-in-jurassic-park-optik.jpg' %}
+{% set mood_image_alt   = 'Ein „Isla Nublar“-Kennzeichen aus dem Film „Jurassic Park“ auf einem Jeep Wrangler Sahara von 1993' %}
+
 {% set activeNavElement = '' %}
 
 {% block article %}
     <article>
         <div class="heading">
             <h1>Exklusive Mietangebote</h1>
-            <h2>Den Jeep selbst erleben</h2>
+            <h2>Den Jeep erleben und gutes tun</h2>
         </div>
+        {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/jurassic-park-logo-auf-der-tuere-eines-jeep-wrangler-sahara.jpg', alt: 'Das Logo des „Jurassic Park“ auf der Seitentüre eines Jeep Wrangler Sahara von 1993', caption: 'Diese Autotüre mit weltbekanntem Logo öffnen und mitfahren? Das ist auf Wunsch ab sofort möglich.' } %}
         <p>Sehr frei nach John Hammond zitiert möchte ich „<em>jedem auf der Welt das Recht geben, sich an diesem Fahrzeug zu erfreuen</em>“.</p>
-        <p>Daher habe ich drei Exklusivpakete geschnürt, um den „Jurassic Jeep“ in kleinem Kreis zu erleben. Bitte beachte bitte, dass es in <u>keinem Falle</u> möglich ist, das Fahrzeug im öffentlichen Straßenverkehr selber zu fahren. Ausserdem wird in jedem Fall einer unserer Guides dabei sein, der euch bei Fragen zur Verfügung steht.</p>
+        <p>Generell ist mein Jeep mehrmals pro Jahr auf Comic-Conventions und anderen Fan-Veranstaltungen vertreten. Hier bietet sich die meist kostenlose Gelegenheit, das Fahrzeug zu sehen, Fotos zu machen und (in den meisten Fällen) auch einmal selber Platz zu nehmen.</p>
+        <p>Dennoch wurde ich schon oft angesprochen, ob man das Fahrzeug nicht auch mieten könnte. Aus diesem Grunde habe ich mir etwas überlegt und drei Pakete geschnürt, die sich an den Personenkreis richten, die den „Jurassic Jeep“ gerne <em>exklusiv</em> erleben möchten – oder Ihren Freunden und Bekannten ein besonderes Geschenk machen wollen.</p>
+        <p>Bitte beachte, dass es in <u>keinem Falle</u> möglich ist, das Fahrzeug im öffentlichen Straßenverkehr selber zu fahren. Ausserdem wird in jedem Fall ein Guide dabei sein, der dir bei Fragen zur Verfügung steht.</p>
+        <p>Übrigens: Wer den Jeep mietet, tut dabei etwas gutes! <strong>Von allen Erlösen, die ich durch die Bereitstellung und Vermietung des „Jurassic Jeep“ erwirtschafte, spende ich am Ende jedes Kalenderjahres 20 % für wohltätige Zwecke!</strong></p>
         <h3>Die drei Exklusivpakete</h3>
-        <h4>Grand Tour</h2>
-        <p>Unser kleinstes und intimstes Paket: Erlebe den „Jurassic Jeep“ aus nächster Nähe. Im privaten Kreis nimmst du und eine optionale Begleitperson an einer Ausfahrt teil. Während der Fahrt erklärt dir dein Guide alle technischen Details des Jeeps und beantwortet deine Fragen. Bei einer Pause während der Ausfahrt erhälst du die Gelegenheit zu einem ausgedehnten Fotoshooting. <sup>*</sup></p>
-        <p><b>Dauer:</b> Ca. 2-3 Stunden</p>
-        <h4>Just Married</h2>
-        <p>Das Paket für deinen besonderes Tag: Du heiratest deine Liebste oder deinen Liebsten und ihr beide seid die weltgrößten „Jurassic Park“-Fans? Dann lasse dich von deinem passend gekleideten Guide nicht nur zur Kirche oder zum Standesamt fahren, sondern auch zum Ort der Feier. Dort angekommen steht euch und euren Gästen dann das Fahrzeug für bleibende Erinnerungen zur Verfügung. <sup>*</sup></p>
-        <p><b>Dauer:</b> Ca. 4-6 Stunden</p>
-        <h4>On Display</h2>
-        <p>Das Paket für Geschäftsbetreiber: Du hast ein Kino, ein Einkaufszentrum oder einen Zoo und planst ein besonderes Event? Dann ist der „Jurassic Jeep“ genau das richtige – vor deinem Geschäft ist genau der richtige Ort für Fotos mit deinen Kunden. Neben einem Guide steht dir optional ein Fotograf zur Verfügung, der deine Kunden ins rechte Licht rückt. <sup>*</sup></p>
-        <p><b>Dauer:</b> Nach Vereinbarung</p>
+        <h4>Paket 1: Grand Tour</h2>
+        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/barbasol-dose-neben-der-seilwinde-auf-einem-jeep-wrangler-sahara.jpg', alt: 'Eine Dose Rasierschaum im alten „Barbasol“-Design, wie sie im Film „Jurassic Park“ verwendet wurde.', caption: 'Mit an Bord: Die Dose „Rasierschaum“, die für das Schmuggeln der Dino-Embryos verwendet wurde.' } %}
+        <p>Unser kleinstes und intimstes Paket richtet sich an die Fans des „Jurassic Park“, die einmal Platz im legendären Jeep Wrangler des Parks nehmen möchte. Nehme zusammen mit einer optionalen Begleitperson<sup>*</sup> an einer gemeinsamen Ausfahrt teil. Während der Fahrt erklärt euch euer Guide alle technischen Details des Jeeps und beantwortet eure Fragen. Bei einer Pause während der Ausfahrt erhaltet ihr darüber hinaus Gelegenheit, in aller Ruhe Fotos und Videos für euer privates Fotoalbum zu machen.</p>
+        <h4>Paket 2: Just Married</h2>
+        <p>Das erweiterte Paket für euren besonderen Tag, z.B. eure Hochzeit. Du und deine Liebste oder dein Liebster nehmt Platz im Jeep Wrangler des „Jurassic Park“. Euer Guide fährt euch im passenden Outfit zum Standesamt, Kirche und/oder zum Ort der Feier. Dort angekommen steht euch und euren Gästen dann das Fahrzeug für bleibende Erinnerungen, Fotos und Videos zur Verfügung.</p>
+        <h4>Paket 3: Business</h2>
+        <p>Das große Paket auf Stundenbasis, speziell für Firmenkunden. Du hast ein Kino, ein Einkaufszentrum oder einen (Urzeit-)Zoo und planst ein besonderes Event? Dann ist der „Jurassic Jeep“ genau das richtige – vor deinem Geschäft ist genau der richtige Ort für bleibende Erinnerungen mit deinen Kunden.</p>
         <div class="d-none d-lg-block">
             <h3>Die Exklusivpakete im Vergleich</h3>
             <div class="table-responsive">
@@ -31,7 +36,7 @@
                             <th scope="row">&nbsp;</th>
                             <th scope="row">Grand Tour</th>
                             <th scope="row">Just Married</th>
-                            <th scope="row">On Display</th>
+                            <th scope="row">Business</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -43,8 +48,8 @@
                         </tr>
                         <tr>
                             <th scope="row">Dauer</th>
-                            <td>Ca. 2-3 h</td>
-                            <td>Ca. 4-6 h</td>
+                            <td>Max. 2,5 Stunden</td>
+                            <td>Max. 6 Stunden</td>
                             <td>Nach Vereinbarung</td>
                         </tr>
                         <tr>
@@ -54,7 +59,7 @@
                             <td>Nach Vereinbarung</td>
                         </tr>
                         <tr>
-                            <th scope="row">Inkl. Ausfahrt</th>
+                            <th scope="row">Inkl. Mitfahrt</th>
                             <td>Ja</td>
                             <td>Ja</td>
                             <td>Nein</td>
@@ -62,35 +67,25 @@
                         <tr>
                             <th scope="row">Fahrkosten</th>
                             <td>Im Preis enthalten</td>
-                            <td>0,39 €/km<br/>(ab dem 51. km)</td>
-                            <td>0,39 €/km<br/>(ab dem 51. km)</td>
+                            <td>100 km frei, danach 0,39 €/km</td>
+                            <td>100 km frei, danach 0,39 €/km</td>
                         </tr>
                         <tr>
-                            <th scope="row">Teilnehmer</th>
-                            <td>Maximal zwei Mitfahrer/innen</td>
-                            <td>Maximal zwei Mitfahrer/innen</td>
-                            <td>Ohne Begrenzung</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Inkl. Fotograf</th>
-                            <td>Nein</td>
-                            <td>Nein</td>
-                            <td>Optional</td>
+                            <th scope="row">Mitfahrer</th>
+                            <td>Max. zwei</td>
+                            <td>Max. zwei</td>
+                            <td>Entfällt</td>
                         </tr>
                         <tr>
                             <th scope="row">Preis</th>
-                            <td>199,90 €</td>
-                            <td>499,90 €</td>
-                            <td>ab 119,- €/h</td>
+                            <td>179 € pro Event<br/>(inkl. MwSt.)</td>
+                            <td>399 € pro Event<br/>(inkl. MwSt.)</td>
+                            <td>80 € pro Stunde<br/>(zzgl. MwSt.)</td>
                         </tr>
                     </tbody>
-                    <caption>Alle Preise inkl. MwSt.</caption>
                 </table>
             </div>
         </div>
-        <p><sup>*</sup> Aufgrund der aktuellen Situtation gilt für alle Exklusivpakete: Die Corona-Hygieneregeln werden berücksichtigt, im Fahrzeug ist ein Mund-Nasen-Schutz zu tragen. Die Abstandsregeln werden, mit Ausnahme während der Autofahrt, streng beachtet. Alle Guides werden maximal 24 Stunden vor einem Termin negativ auf Corona getestet. Aufgrund der Coronoa-Pandemie ist aktuell bis auf Weiteres keine Begleitperson möglich.</p>
-        <h3>Ein besonderer Bonus: Die Fan-Events</h3>
-        <p>Generell ist mein Jeep auch mehrmals pro Jahr auf Comic-Conventions und anderen Fan-Veranstaltungen vertreten. Auch hier bietet sich die Gelegenheit, das Fahrzeug zu sehen und (in den meisten Fällen) kostenlose Fotos zu machen.</p>
-        <p>Die Exklusivpakete oben richten sich an den Personenkreis, die den „Jurassic Jeep“ gerne <em>exklusiv</em> erleben möchten – oder Ihren Freunden und Bekannten ein besonderes Geschenk machen wollen.</p>
+        <p><sup>*</sup> Die Corona-Hygieneregeln werden berücksichtigt, im Fahrzeug ist während der Fahrt ein Mund-Nasen-Schutz zu tragen. Die Abstandsregeln werden, soweit möglich, streng beachtet. Alle Guides werden maximal 48 Stunden vor dem vereinbarten Termin negativ auf Corona getestet. Bis auf Weiteres ist leider keine Begleitperson möglich (ausser Kinder bis 12 Jahre).</p>
     </article>
 {% endblock %}
