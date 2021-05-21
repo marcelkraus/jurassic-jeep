@@ -312,6 +312,7 @@ main {
         .card {
             background-color: $white;
             border-bottom-right-radius: 2rem;
+            border-color: $secondary;
             margin-bottom: 1.25rem;
             @include media-breakpoint-up(lg) {
                 width: 15rem;
