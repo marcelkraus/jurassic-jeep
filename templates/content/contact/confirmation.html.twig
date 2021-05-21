@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% set title            = 'Vielen Dank für deine Nachricht' %}
+{% set robots           = 'noindex,follow' %}
+{% set description      = '' %}
+{% set activeNavElement = 'contact' %}
+
+{% block article %}
+    <article>
+        <div class="heading">
+            <h1>Kontakt</h1>
+            <h2>Dein direkter Draht zum Fahrer</h2>
+        </div>
+        <p><strong>Vielen Dank, deine Nachricht wurde verschickt.</strong></p>
+        <p>Ich werde dir so schnell wie möglich antworten, in der Regel innerhalb der nächsten 48 Stunden.</p>
+        <p>Bis es soweit ist, schau dich doch noch ein wenig auf „Jurassic Jeep“ um. Wie wäre es z.B. mit einem Blick in die <a href="{{ path('gallery') }}">Bildergalerie</a>?
+    </article>
+{% endblock %}

@@ -1,0 +1,8 @@
+{{ full_name }} ({{ email_address }}) hat soeben folgende Nachricht über das Kontaktformular auf https://www.jurassicjeep.de gesendet:
+
+{{ message }}
+
+{% if phone != "" %}
+-- 
+{{ full_name }} hat zusätzlich die Telefonnummer „{{ phone }}“ für Rückfragen angegeben.
+{% endif %}

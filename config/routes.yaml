@@ -1,6 +1,10 @@
 contact:
     path: /kontakt
-    controller: App\Controller\StaticContentController::contact
+    controller: App\Controller\ContactController::index
+
+contact_confirmation:
+    path: /kontakt/nachricht-erhalten
+    controller: App\Controller\ContactController::confirmation
 
 gallery:
     path: /bilder-des-jeep

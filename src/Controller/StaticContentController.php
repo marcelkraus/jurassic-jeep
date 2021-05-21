@@ -7,11 +7,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class StaticContentController extends AbstractController
 {
-    public function contact(): Response
-    {
-        return $this->render('content/contact.html.twig');
-    }
-
     public function gallery(): Response
     {
         return $this->render('content/gallery.html.twig');

@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% set title            = 'Kontaktmöglichkeiten bei Fragen zum Jeep' %}
+{% set description      = 'Das Kontaktformular ermöglicht den direkten Kontakt zum Fahrer des „Jurassic Jeep“, für allgemeine Fragen zum Fahrzeug oder für konkrete Mietanfragen.' %}
+{% set activeNavElement = 'contact' %}
+{% set mood_image_src   = '/images/jurassic-park-und-jeep-decals-auf-einem-jeep-wrangler-sahara.jpg' %}
+{% set mood_image_alt   = '„Jurassic Park“- und „Jeep“-Decals auf der Beifahrertüre und dem Seitenteil eines 1993er Jeep Wrangler Sahara' %}
+
+{% block article %}
+    <article>
+        <div class="heading">
+            <h1>Kontakt</h1>
+            <h2>Dein direkter Draht zum Fahrer</h2>
+        </div>
+        <p>Nutze das nachfolgende Kontaktformular, um mit mir in Verbindung zu treten.</p>
+        <p>Ich freue mich über alle Formen von Nachrichten – egal ob lobende Worte, konstruktive Kritik oder technische Rückfragen zum Jeep. Ich versuche alle Nachrichten innerhalb von 48 Stunden zu beantworten.</p>
+        {% if ff_leasing_available %}
+            <p>Sofern es sich bei deinem Anliegen um eine <a href="{{ path('leasing') }}">unverbindliche Mietanfrage</a> handelt, gebe in deiner Nachricht bitte das gewünschte Exklusivpaket und deinen Wunschtermin an – den Rest besprechen wir gerne persönlich.</p>
+        {% endif %}
+        {{ form_start(form) }}
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form_row(form.firstName) }}
+                </div>
+                <div class="col-md-6">
+                    {{ form_row(form.lastName) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ form_row(form.emailAddress) }}
+                </div>
+                <div class="col-md-6">
+                    {{ form_row(form.phone) }}
+                </div>
+            </div>
+            {{ form_row(form.message) }}
+        {{ form_end(form) }}
+        <p><small>Alle Felder, mit Ausnahme deiner Mobilfunknummer, sind Pflichtfelder.<br/>
+        Alle deine Angaben werden streng vertraulich behandelt.</small></p>
+        <h3>Keine Lust auf Mails?</h3>
+        <p>Du erreichst mich bei Fragen natürlich auch direkt über die Nachrichtenfunktion der Social-Media-Kanäle <a href="{{ social_facebook }}">Facebook</a> und <a href="{{ social_instagram }}">Instagram</a>.</p>
+    </article>
+{% endblock %}
