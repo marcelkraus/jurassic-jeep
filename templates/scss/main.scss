@@ -101,14 +101,6 @@ aside {
         h2 {
             margin-bottom: 1.25rem;
         }
-        .divider {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 2.5rem;
-            height: 0.25rem;
-            background-color: $secondary;
-            width: 50%;
-        }
         nav {
             .primary-menu {
                 margin-left: -1.25rem;
@@ -168,31 +160,54 @@ aside {
                 }
             }
         }
-        .leasing {
-            .call-to-action {
-                margin-top: 1.25rem;
-                margin-left: -1.25rem;
+        .cta-primary {
+            margin-top: 1.25rem;
+            margin-left: -1.25rem;
+            @include media-breakpoint-up(lg) {
+                margin-left: -3.75rem;
+            }
+            a {
+                display: block;
+                background: $primary;
+                color: $white;
+                padding: 0.5rem;
+                padding-left: 1.25rem;
+                border-bottom-right-radius: 1rem;
+                text-decoration: none;
                 @include media-breakpoint-up(lg) {
-                    margin-left: -3.75rem;
+                    padding-left: 3.75rem;
                 }
-                a {
-                    display: block;
-                    background: $primary;
-                    color: $white;
-                    padding: 0.5rem;
-                    padding-left: 1.25rem;
-                    border-bottom-right-radius: 1rem;
-                    text-decoration: none;
-                    @include media-breakpoint-up(lg) {
-                        padding-left: 3.75rem;
-                    }
-                    &:hover {
-                        background-color: darken($color: $primary, $amount: 10);
-                    }
+                &:hover {
+                    background-color: darken($color: $primary, $amount: 10);
                 }
             }
         }
-        .social {
+        .cta-secondary {
+            margin-top: 1.25rem;
+            margin-left: -1.25rem;
+            @include media-breakpoint-up(lg) {
+                margin-left: -3.75rem;
+            }
+            a {
+                display: block;
+                background-color: rgba(255, 255, 255, 0.75);
+                backdrop-filter: blur(0.25rem);
+                -webkit-backdrop-filter: blur(0.25rem);
+                color: $body-color;
+                padding: 0.5rem;
+                padding-left: 1.25rem;
+                border-bottom-right-radius: 1rem;
+                text-decoration: none;
+                @include media-breakpoint-up(lg) {
+                    padding-left: 3.75rem;
+                }
+                &:hover {
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+        }
+        .social-links {
             a {
                 color: $primary;
                 text-decoration: none;
