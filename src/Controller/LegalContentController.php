@@ -16,9 +16,4 @@ class LegalContentController extends AbstractController
     {
         return $this->render('content/legal/privacy.html.twig');
     }
-
-    public function termsOfUse(): Response
-    {
-        return $this->render('content/legal/terms-of-use.html.twig');
-    }
 }

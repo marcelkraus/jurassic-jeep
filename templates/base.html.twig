@@ -4,8 +4,6 @@
 {% set youtube_last_video = "https://www.youtube.com/watch?v=CUAyAi4-xyI" %}
 {% set mood_image_url     = url('homepage') ~ (mood_image_src | default('/images/jeep-wrangler-im-naturparkzentrum-gymnicher-muehle-in-erftstadt.jpg') | replace({'/images': 'images'})) %}
 
-{% set ff_leasing_available = false %}
-
 <!DOCTYPE html>
 
 <html lang="de">
@@ -90,11 +88,9 @@
                             {% block navigation %}
                                 {% include 'sidebar/navigation.html.twig' %}
                             {% endblock %}
-                            {% if ff_leasing_available %}
-                                {% block leasing %}
-                                    {% include 'sidebar/leasing.html.twig' %}
-                                {% endblock %}
-                            {% endif %}
+                            {% block leasing %}
+                                {% include 'sidebar/leasing.html.twig' %}
+                            {% endblock %}
                             {% block youtube %}
                                 {% include 'sidebar/youtube.html.twig' %}
                             {% endblock %}
@@ -121,9 +117,6 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
                                             <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                            {% if ff_leasing_available %}
-                                                <li class="list-inline-item"><a href="{{ path('terms-of-use') }}">AGB</a></li>
-                                            {% endif %}
                                         </ul>
                                     </nav>
                                 </div>
