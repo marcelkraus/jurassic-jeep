@@ -1,17 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% set title            = 'Schöne Bilder meines Jeep aus „Jurassic Park“' %}
-{% set description      = 'Der „Jurassic Jeep“ entspricht aus jedem Winkel dem originalen Jeep, wie er vor fast 30 Jahren in „Jurassic Park“ auf der Isla Nublar zum Einsatz kam.' %}
+{% set description      = 'Der „Jurassic Jeep“ entspricht aus jedem Winkel dem originalen Jeep, der vor fast 30 Jahren in „Jurassic Park“ auf der Isla Nublar zum Einsatz kam.' %}
 {% set activeNavElement = 'gallery' %}
 
 {% block article %}
     <article>
         <div class="heading">
             <h1>Bilder meines Jeep</h1>
-            <h2>Aus jedem Winkel eine gute Figur</h2>
+            <h2>Aus jedem Winkel gut gelungen</h2>
         </div>
         <p>Der „Jurassic Jeep“ ist erst vor kurzem mit der Fähre aus Isla Nublar gelandet. Leider habe ich es bisher noch nicht geschafft, diesen Bereich der Homepage mit Leben zu füllen.</p>
-        <p>Schöne Bilder werden hier in Kürze nachgereicht.</p>
-        <p>Bis dahin, besuche mich doch auf <a href="{{ social_instagram }}" title="Folge dem „Jurassic Jeep“ auf Instagram"><i class="bi-instagram"></i> Instagram</a> – hier poste ich regelmäßig Bilder des „Jurassic Jeep“.</p>
+        <p>Du findest jedoch regelmäßig neue Inhalte auf meinem Instagram-Account <i>@jurassicjeep.de</i> – ich freue mich auf deinen Besuch!</p>
+        <p class="cta-button">
+            <a href="{{ social_instagram }}" title="Folge dem „Jurassic Jeep“ auf Instagram"><i class="bi-instagram"></i> @jurassicjeep auf Instagram</a>
+        </p>
     </article>
 {% endblock %}
