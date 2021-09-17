@@ -7,17 +7,17 @@
 {% block article %}
     <article>
         <div class="heading">
-            <h1>Willkommen im „Jurassic Park“</h1>
-            <h2>Von der Leinwand auf deutsche Strassen</h2>
+            <h1>Das Leben, uh, findet einen Jeep!</h1>
+            <h2>Von Isla Nublar direkt mit dir auf Tour</h2>
         </div>
-        <p>„Jurassic Jeep“ erzählt die Geschichte meines 1993er Jeep Wrangler Sahara, der in eine originalgetreue Nachbildung aus den Blockbustern „Jurassic Park“ und „Jurassic World“ umgebaut wurde.</p>
-        <p class="inset-left"><img src="/images/fahrzeug/jeep-wrangler-sahara-in-jurassic-park-optik-auf-der-wiese.jpg" alt="Frontansicht eines in „Jurassic Park“-Optik aufgebautem Jeep Wrangler Sahara" class="img-fluid img-thumbnail"></p>
-        <p>Auf dieser Internetpräsenz möchte ich das Fahrzeug in allen Details vorstellen: Von den Grundlagen wie dem verwendeten Modell, über die Details wie z.B. Sitze und Felgen, bis hin zu dem optionalen Zubehör. Da die Recherche und Dokumentation etwas Zeit in Anspruch nimmt, sind zum jetzigen Zeitpunkt noch nicht alle Inhalte der Internetpräsenz fertiggestellt.</p>
-        <p class="inset-right"><img src="/images/fahrzeug/heckansicht-eines-jeep-wrangler-sahara-in-jurassic-park-optik-auf-der-wiese.jpg" alt="Heckansicht eines in „Jurassic Park“-Optik aufgebautem Jeep Wrangler Sahara" class="img-fluid img-thumbnail"></p>
-        <p>Dennoch habe ich mich entschieden, den aktuellen Stand von „Jurassic Jeep“ nach Abholung des Fahrzeugs bei seinem Vorbesitzer freizuschalten. Ich denke, es gibt bereits schon jetzt viel zu entdecken und ich freue mich auf dein Feedback!</p>
-        <p class="inset-left"><img src="/images/fahrzeug/isla-nublar-kennzeichen-aus-jurassic-park-an-einem-jeep-wrangler.jpg" alt="Das Kennzeichen der „Isla Nublar“ auf einem in „Jurassic Park“-Optik aufgebautem Jeep Wrangler Sahara" class="img-fluid img-thumbnail"></p>
-        <p>Ein besonderer Dank gilt Jörg, dem Vorbesitzer des Jeep Wrangler Sahara – für seine Hilfe und Geduld vor der Abholung und die hervorragende Arbeit bei der Umsetzung des „Jurassic Jeep“. Ebenso gilt mein Dank dem „Jurassic Park Motorpool“ und seinen Mitgliedern, dessen Informationen eine der elementaren Grundlagen dieser Internetpräsenz sind.</p>
-        <p>Marcel Kraus<br/>
-        <em>— im Mai 2021</em></p>
+        <p>Herzlich Willkommen auf der offiziellen Homepage des <span class="brand">Jurassic Jeep</span>! Dieser 1993er Jeep Wrangler Sahara ist ein authentischer Nachbau eines der Filmfahrzeuge, die in „Jurassic Park“ (1993) und „Jurassic World“ (2015) zu sehen waren.</p>
+        {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/isla-nublar-kennzeichen-aus-jurassic-park-an-einem-jeep-wrangler.jpg', alt: 'Das Kennzeichen der Isla Nublar auf einem in „Jurassic Park“-Optik aufgebautem Jeep Wrangler Sahara', caption: 'Der Jeep trägt die fiktive Nummer 16 auf dem Kennzeichen der Isla Nublar.' } %}
+        <p>Auf dieser Homepage stelle ich das Fahrzeug in allen Details vor. Von den Grundlagen wie dem verwendeten Modell, über die kleinen Details wie z.B. die Sitze und die Felgen, bis hin zu dem optionalen Zubehör.</p>
+        <p>Wenn du den den Jeep einmal live erleben möchtest, gibt es verschiedene Möglichkeiten:</p>
+        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/heckansicht-eines-jeep-wrangler-sahara-in-jurassic-park-optik-auf-der-wiese.jpg', alt: 'Heckansicht eines in „Jurassic Park“-Optik aufgebautem Jeep Wrangler Sahara', caption: 'Der Jeep ist ab sofort auch zu mieten, z.B. für exklusive Rundfahrten.' } %}
+        <p>Das Fahrzeug wird regelmäßig auf Veranstaltungen, z.B. in Museen oder auf Conventions, ausgestellt und kann dort besichtigt und fotografiert werden. Aktuelle Termine findest du z.B. auf unserer Facebook-Seite.</p>
+        <p>Möchtest du jedoch ein ganz exklusive Abenteuer erleben, so sind <a href="{{ path('leasing') }}">unsere Mietangebote</a> für dich bestimmt von Interesse.</p>
+        <p>Buche den Jeep für eine spannende Rundfahrt (mit einem unserer Guides), Hochzeiten oder Events aller Art. Ein Teil der Erlöse aus diesen Vermietungen wird übrigens für wohltätige Zwecke gespendet.</p>
+        <p>Du bekommst nicht genug? Dann folge dem Jeep auf <a href="{{ social_facebook }}" title="Folge dem Jeep auf Facebook">Facebook</a>, <a href="{{ social_instagram }}" title="Folge dem Jeep auf Instagram">Instagram</a> und <a href="{{ social_youtube }}" title="Folge dem Jeep auf YouTube">YouTube</a>. Erhalte stets neue Bilder und Videos, aktuelle Nachrichten und exklusive Angebote. </p>
     </article>
 {% endblock %}
