@@ -16,7 +16,7 @@ history:
 
 homepage:
     path: /
-    controller: App\Controller\StaticContentController:homepage
+    controller: App\Controller\StaticContentController::homepage
 
 imprint:
     path: /impressum
