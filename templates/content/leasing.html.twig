@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% set title            = 'Jetzt mieten und den Jeep ganz exklusiv erleben' %}
-{% set description      = 'Spezielle Mietangebote ermöglichen es, den „Jurassic Jeep“ ganz exklusiv zu erleben: Sei es auf einer privaten Tour oder für gewerbliche Zwecke.' %}
+{% set description      = 'Von Isla Nublar direkt mit dir auf Tour. Der „Jurassic Jeep“ kann gemietet werden – für Rundfahrten, Hochzeiten und Events aller Art.' %}
 {% set mood_image_src   = '/images/isla-nublar-kennzeichen-des-jeep-wrangler-in-jurassic-park-optik.jpg' %}
 {% set mood_image_alt   = 'Ein Kennzeichen der Isla Nublar aus dem Film „Jurassic Park“ auf einem Jeep Wrangler Sahara von 1993' %}
 
@@ -10,86 +10,126 @@
 {% block article %}
     <article>
         <div class="heading">
-            <h1>Mietangebote</h1>
-            <h2>Den Jeep ganz exklusiv erleben</h2>
+            <h1>Den Jeep mieten</h1>
+            <h2>Das „Jurassic Park“-Feeling selbst erleben</h2>
         </div>
-        {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/jurassic-park-logo-auf-der-tuere-eines-jeep-wrangler-sahara.jpg', alt: 'Das Logo des „Jurassic Park“ auf der Seitentüre eines Jeep Wrangler Sahara von 1993', caption: 'Diese Autotüre mit weltbekanntem Logo öffnen und mitfahren? Das ist auf Wunsch ab sofort möglich.' } %}
+        {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/jurassic-park-logo-auf-der-tuere-eines-jeep-wrangler-sahara.jpg', alt: 'Das Logo des „Jurassic Park“ auf der Seitentüre eines Jeep Wrangler Sahara von 1993', caption: 'Die Türe mit dem weltbekanntem Logo öffnen und mitfahren? Das ist jetzt möglich.' } %}
         <p>Sehr frei nach John Hammond zitiert möchte ich „<em>jedem auf der Welt das Recht geben, sich an diesem Fahrzeug zu erfreuen</em>“.</p>
         <p>Generell ist mein Jeep mehrmals pro Jahr auf Comic-Conventions und anderen Fan-Veranstaltungen vertreten. Hier bietet sich die meist kostenlose Gelegenheit, das Fahrzeug zu sehen, Fotos zu machen und (in den meisten Fällen) auch einmal selber Platz zu nehmen.</p>
-        <p>Dennoch wurde ich schon oft angesprochen, ob man das Fahrzeug nicht auch mieten könnte. Aus diesem Grunde habe ich mir etwas überlegt und drei Pakete geschnürt, die sich an den Personenkreis richten, die den <span class="brand">Jurassic Jeep</span> gerne <em>exklusiv</em> erleben möchten – oder Ihren Freunden und Bekannten ein besonderes Geschenk machen wollen.</p>
-        <p>Bitte beachte, dass es in <u>keinem Falle</u> möglich ist, das Fahrzeug im öffentlichen Straßenverkehr selber zu fahren. Ausserdem wird in jedem Fall ein Guide dabei sein, der dir bei Fragen zur Verfügung steht.</p>
-        <p>Wer den Jeep mietet, tut dabei auch etwas gutes:</p>
-        <p>Einen Teil der Erlöse, die ich durch die Bereitstellung und Vermietung des Fahrzeugs erwirtschafte, spende ich am Ende jedes Kalenderjahres für wohltätige Zwecke. Ebenso stelle ich den Jeep für wohltätige bzw. ka­ri­ta­tive Einrichtungen und Veranstaltungen stark vergünstigt zur Verfügung.</p>
-        <h3>Die drei Exklusivpakete</h3>
-        <h4>Paket 1: Grand Tour</h2>
-        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/barbasol-dose-neben-der-seilwinde-auf-einem-jeep-wrangler-sahara.jpg', alt: 'Eine Dose Rasierschaum im alten „Barbasol“-Design, wie sie im Film „Jurassic Park“ verwendet wurde.', caption: 'Mit an Bord: Die Dose „Rasierschaum“, die für das Schmuggeln der Dino-Embryos verwendet wurde.' } %}
-        <p>Unser kleinstes und intimstes Paket richtet sich an die Fans des „Jurassic Park“, die einmal Platz im legendären Jeep Wrangler des Parks nehmen möchte. Nehme zusammen mit einer optionalen Begleitperson<sup>*</sup> an einer gemeinsamen Ausfahrt teil. Während der Fahrt erklärt euch euer Guide alle technischen Details des Jeeps und beantwortet eure Fragen. Bei einer Pause während der Ausfahrt erhaltet ihr darüber hinaus Gelegenheit, in aller Ruhe Fotos und Videos für euer privates Fotoalbum zu machen.</p>
-        <h4>Paket 2: Just Married</h2>
-        <p>Das erweiterte Paket für euren besonderen Tag, z.B. eure Hochzeit. Du und dein Lieblingsmensch nehmt Platz im Jeep Wrangler des „Jurassic Park“. Euer Guide fährt euch im passenden Outfit zum Standesamt, Kirche und/oder zum Ort der Feier. Dort angekommen steht euch und euren Gästen dann das Fahrzeug für bleibende Erinnerungen, Fotos und Videos zur Verfügung.</p>
-        <h4>Paket 3: Big Business</h2>
-        <p>Das große Paket auf Stundenbasis, speziell für gewerbliche Kunden. Du hast ein Kino, ein Einkaufszentrum oder einen (Urzeit-)Zoo und planst ein besonderes Event? Dann ist der Jeep genau das richtige – vor deinem Geschäft ist genau der richtige Ort für bleibende Erinnerungen mit deinen Kunden.</p>
-        <div class="d-none d-lg-block">
-            <h3>Die Exklusivpakete im Vergleich</h3>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="row">&nbsp;</th>
-                            <th scope="row">Grand Tour</th>
-                            <th scope="row">Just Married</th>
-                            <th scope="row">Big Business</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Zielgruppe</th>
-                            <td>Privatpersonen</td>
-                            <td>Privatpersonen</td>
-                            <td>Gewerbekunden</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Dauer</th>
-                            <td>Ca. 2 Stunden</td>
-                            <td>Nach Vereinbarung</td>
-                            <td>Nach Vereinbarung</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Ort</th>
-                            <td>50374 Erftstadt</td>
-                            <td>Nach Vereinbarung</td>
-                            <td>Nach Vereinbarung</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Inkl. Mitfahrt</th>
-                            <td>Ja</td>
-                            <td>Ja</td>
-                            <td>Nein</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Fahrkosten</th>
-                            <td>Komplett enthalten</td>
-                            <td>100 km frei, danach 0,35 €/km</td>
-                            <td>100 km frei, danach 0,35 €/km</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Passagiere</th>
-                            <td>Max. zwei</td>
-                            <td>Max. zwei</td>
-                            <td>Entfällt</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Preis</th>
-                            <td>Auf Anfrage</td>
-                            <td>Auf Anfrage</td>
-                            <td>Auf Anfrage</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <p>Dennoch wurde ich mehrfach angesprochen, ob man das Fahrzeug nicht auch mieten könnte. Ja, man kann: Für Rundfahrten, Hochzeiten &amp; Events aller Art.</p>
+        <p>Du möchtest das Feeling eines Besuchs im „Jurassic Park“? Dann lass ich von deinem Fahrer sicher von A nach B bringen. Deine Fragen zum Jeep, zu den Filmen und allen Hintergründen beantwortet er dir dabei gerne.</p>
+        <p>Auch für stationäre Zwecke ist der Jeep zu mieten: Als Fotopoint auf deinem Event zieht dieser Eyecatcher garantiert alle Blicke auf sich – egal ob Hochzeit oder Tag der offenen Tür.</p>
+        <h3>Die Preise der Saison 2022 (Auszug)</h3>
+        <h4>Angebote auf Stundenbasis</h4>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <caption>Alle Preise verstehen sich inkl. 19 % Mehrwertsteuer. Ab einer Mietdauer von sieben Stunden gilt der Tagestarif.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th class="text-end" scope="col">Privatkunden &amp; gemeinnützige Organisationen</th>
+                        <th class="text-end" scope="col">Gewerbekunden</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>„On Display“ (stehend)</strong><br/>
+                            inkl. Ansprechpartner
+                        </td>
+                        <td class="text-end">
+                            69 € pro Stunde<br/>
+                            449 € pro Tag
+                        </td>
+                        <td class="text-end">
+                            89 € pro Stunde<br/>
+                            599 € pro Tag
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>„Rolling (fahrend)</strong><br/>
+                            inkl. Fahrer
+                        </td>
+                        <td class="text-end">
+                            79 € pro Stunde<br/>
+                            zzgl. Fahrkosten
+                        </td>
+                        <td class="text-end">
+                            99 € pro Stunde<br/>
+                            zzgl. Fahrkosten
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Fahrkosten</strong><br/>
+                            Abrechnung nach km, An- und Abfahrt bis 50 km frei
+                        </td>
+                        <td class="text-end">
+                            0,39 € pro km
+                        </td>
+                        <td class="text-end">
+                            0,39 € pro km
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Begleitpersonen</strong><br/>
+                            max. zwei Personen möglich
+                        </td>
+                        <td class="text-end">
+                            kostenfrei
+                        </td>
+                        <td class="text-end">
+                            kostenfrei
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <p><sup>*</sup> Die COVID-19-Hygieneregeln werden berücksichtigt, im Fahrzeug ist während der Fahrt unter Umständen ein Mund-Nasen-Schutz zu tragen. Die Abstandsregeln werden ausserhalb des Fahrzeugs streng beachtet. Alle Guides sind durchgeimpft und/oder werden unmittelbar vor dem vereinbarten Termin negativ auf COVID-19 getestet.</p>
+        <h4>Erlebnispakete</h4>
+        <div class="table-responsive">
+            <table class="table table-sm">
+            <caption>Alle Preise verstehen sich inkl. 19 % Mehrwertsteuer. Die Erlebnispakete sind ausschließlich für Privatkunden zu buchen.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Paket</th>
+                        <th scope="col">Umfang</th>
+                        <th class="text-end" scope="col">Privatkunden</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>„The Grand Tour“</strong></td>
+                        <td>
+                            Geführte Tour („Rolling“) ab Erftstadt, Dauer ca. 1,5 Stunden<br>
+                            45-60 Min. Fahrzeit, 30-45 Min. Zeit für Fotos und Fragen
+                        </td>
+                        <td class="text-end">
+                            119 € pro Paket
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>„Just Married“</strong></td>
+                        <td>
+                            Max. einstündige Hochzeitsfahrt („Rolling“) und drei Stunden stehend („On Display“) als Foto-Point<br/>
+                            Fahrkosten bis 100 km (inkl. An- und Abfahrt) frei
+                        </td>
+                        <td class="text-end">
+                            299 € pro Paket
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Vollständige Preisliste im PDF-Format</h3>
+        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/barbasol-dose-neben-der-seilwinde-auf-einem-jeep-wrangler-sahara.jpg', alt: 'Eine Dose Rasierschaum im alten „Barbasol“-Design, wie sie im Film „Jurassic Park“ verwendet wurde.', caption: 'Natürlich auch mit an Bord: Eine ganz spezielle Sorte Rasierschaum.' } %}
+        <p>Diese Seite beinhaltet einen <em>Auszug</em> der Preisliste der Saison 2022.</p>
+        <p>Die vollständige Preisliste mit allen Hinweisen kannst du du nachfolgend im PDF-Format herunterladen: <a href="/downloads/preisliste-2022.pdf">Preisliste der Saison 2022 herunterladen</a>.</p>
+        <p>Bitte beachte insbesondere die COVID-19-Regelungen im Fahrzeug.</p>
         <h3>Jetzt unverbindlich anfragen</h3>
-        <p>Du bist an einem der Exklusivpakete interessiert und möchtest gerne unverbindlich einen Termin und einen Preis anfragen? Dann nutze jetzt das Kontaktformular, um mit mir in in Kontakt zu treten.</p>
+        <p>Du bist an einer Buchung interessiert und möchtest gerne unverbindlich einen Termin und Gesamtpreis anfragen? Ich freue mich!</p>
+        <p>Dann nutze jetzt das Kontaktformular, um mit mir in in Kontakt zu treten, schreibe mir eine E-Mail (hallo (at) jurassicjeep.de) oder nutze die Kontaktmöglichkeiten der sozialen Netzwerke.</p>
         <p class="cta-button">
             <a href="{{ path('contact') }}?ref=leasing">Kontaktformular öffnen</a>
         </p>
