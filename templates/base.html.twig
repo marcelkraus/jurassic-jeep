@@ -9,7 +9,7 @@
 <html lang="de">
     <head>
         <meta charset="utf-8">
-        <title>{{ title }} &middot; Jurassic Jeep</title>
+        <title>{{ title }} &#9642; Jurassic Jeep</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="{{ author | default('Marcel Kraus, Erftstadt') }}">
         <meta name="robots" content="{{ robots | default('index,follow') }}">
@@ -40,7 +40,7 @@
         <meta property="og:site_name" content="Jurassic Jeep">
         <meta property="og:title" content="{{ title }}">
         <meta property="og:image" content="{{ mood_image_url }}">
-        <meta property="og:image:alt" content="{{ mood_image_alt | default('Ein Jeep Wrangler Sahara in „Jurassic Park“-Optik im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}">
+        <meta property="og:image:alt" content="{{ mood_image_alt | default('Ein „Jurassic Park“-Jeep im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}">
         <meta property="og:description" content="{{ description }}">
         {% if app.environment == "prod" %}
             <script type="text/javascript">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="mood-image">
-                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt | default('Ein Jeep Wrangler Sahara in „Jurassic Park“-Optik im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}" class="img-fluid" />
+                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt | default('Ein „Jurassic Park“-Jeep im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}" class="img-fluid" />
                     </div>
                 </header>
                 <div class="row">
@@ -112,7 +112,7 @@
                             <footer>
                                 <div class="row">
                                     <div class="col-8">
-                                        <p>&copy; 2021 Marcel Kraus, Erftstadt.</p>
+                                        <p>&copy; 2021 – {{ "now"|date("Y") }} Marcel Kraus, Erftstadt.</p>
                                     </div>
                                     <div class="col-4">
                                     <nav>
@@ -122,7 +122,7 @@
                                         </ul>
                                     </nav>
                                 </div>
-                                <p>„Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Der „Jurassic Jeep“ ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.</p>
+                                <p>„Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Mein „Jurassic Park“-Jeep ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.</p>
                             </footer>
                         </main>
                     </div>
