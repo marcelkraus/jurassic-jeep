@@ -98,7 +98,8 @@ aside {
     margin: 2.5rem 0;
     .sidebar-element {
         margin: 2.5rem 1.25rem;
-        h2 {
+        .lead {
+            color: $primary;
             margin-bottom: 1.25rem;
         }
         nav {
@@ -179,6 +180,32 @@ aside {
                 }
                 &:hover {
                     background-color: darken($color: $primary, $amount: 10);
+                }
+            }
+        }
+        .badges {
+            .badge {
+                margin: 0;
+                padding-right: .5rem;
+                :last-child {
+                    padding: 0;
+                }
+                img {
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    border: 0;
+                    @include media-breakpoint-up(lg) {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                    @include media-breakpoint-up(xl) {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                    @include media-breakpoint-up(xxl) {
+                        width: 6.5rem;
+                        height: 6.5rem;
+                    }
                 }
             }
         }
