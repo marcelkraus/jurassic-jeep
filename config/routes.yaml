@@ -6,10 +6,6 @@ contact_confirmation:
     path: /kontakt/nachricht-erhalten
     controller: App\Controller\ContactController::confirmation
 
-gallery:
-    path: /bilder-des-jeep
-    controller: App\Controller\StaticContentController::gallery
-
 history:
     path: /die-historie-des-jeep
     controller: App\Controller\StaticContentController::history

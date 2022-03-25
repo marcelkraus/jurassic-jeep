@@ -1,30 +1,30 @@
 <section class="sidebar-element">
     <nav>
         <ul class="list-unstyled primary-menu">
-            <li class="primary-menu-element {% if activeNavElement == 'history' %}primary-menu-element-active{% endif %}">
-                <a href="{{ path('history') }}">Historie</a>
-            </li>
             <li class="primary-menu-element {% if activeNavElement == 'vehicle' %}primary-menu-element-active{% endif %}">
-                <a href="{{ path('vehicle') }}">Fahrzeug</a>
+                <a href="{{ path('vehicle') }}">Der Jeep</a>
             </li>
-        {% if activeNavElement == 'vehicle' %}
-            </ul>
-            <ul class="list-unstyled secondary-menu">
-                <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_cb_radio' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_cb_radio') }}">CB-Funkgerät</a></li>-->
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_rims' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_rims') }}">Felgen und Reifen</a></li>
-                <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_lightbar' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_lightbar') }}">Lampenbügel</a></li>-->
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_paintjob' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_paintjob') }}">Lackierung</a></li>
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_fog_lights' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_fog_lights') }}">Nebelscheinwerfer</a></li>
-                <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_winch' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_winch') }}">Seilwinde</a></li>-->
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_seats' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_seats') }}">Sitze und Teppiche</a></li>
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_softtop' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_softtop') }}">Softtop mit Halbtüren</a></li>
-                <li class="secondary-menu-element {% if activeSubElement == 'vehicle_panels' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_panels') }}">Verkleidungen</a></li>
-                <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_accessories' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_accessories') }}">Weiteres Zubehör</a></li>-->
-            </ul>
-            <ul class="list-unstyled primary-menu">
-        {% endif %}
-            <li class="primary-menu-element {% if activeNavElement == 'gallery' %}primary-menu-element-active{% endif %}">
-                <a href="{{ path('gallery') }}">Bilder</a>
+            {% if activeNavElement == 'vehicle' %}
+                </ul>
+                <ul class="list-unstyled secondary-menu">
+                    <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_cb_radio' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_cb_radio') }}">CB-Funkgerät</a></li>-->
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_rims' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_rims') }}">Felgen und Reifen</a></li>
+                    <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_lightbar' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_lightbar') }}">Lampenbügel</a></li>-->
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_paintjob' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_paintjob') }}">Lackierung</a></li>
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_fog_lights' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_fog_lights') }}">Nebelscheinwerfer</a></li>
+                    <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_winch' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_winch') }}">Seilwinde</a></li>-->
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_seats' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_seats') }}">Sitze und Teppiche</a></li>
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_softtop' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_softtop') }}">Softtop mit Halbtüren</a></li>
+                    <li class="secondary-menu-element {% if activeSubElement == 'vehicle_panels' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_panels') }}">Verkleidungen</a></li>
+                    <!--<li class="secondary-menu-element {% if activeSubElement == 'vehicle_accessories' %} secondary-menu-element-active{% endif %}"><a href="{{ path('vehicle_accessories') }}">Weiteres Zubehör</a></li>-->
+                </ul>
+                <ul class="list-unstyled primary-menu">
+            {% endif %}
+            <li class="primary-menu-element {% if activeNavElement == 'history' %}primary-menu-element-active{% endif %}">
+                <a href="{{ path('history') }}">Die Historie</a>
+            </li>
+            <li class="primary-menu-element {% if activeNavElement == 'leasing' %}primary-menu-element-active{% endif %}">
+                <a href="{{ path('leasing') }}">Den Jeep mieten</a>
             </li>
             <li class="primary-menu-element {% if activeNavElement == 'contact' %}primary-menu-element-active{% endif %}">
                 <a href="{{ path('contact') }}">Kontakt</a>

@@ -1,7 +1,6 @@
 {% set social_facebook    = "https://www.facebook.com/jurassicjeep.de" %}
 {% set social_instagram   =  "https://www.instagram.com/jurassicjeep.de/" %}
 {% set social_youtube     = "https://www.youtube.com/channel/UCDJXUi8NY3lgLxh1_fcDNog" %}
-{% set youtube_last_video = "https://youtu.be/rU9b4UgfdTs" %}
 {% set mood_image_url     = url('homepage') ~ (mood_image_src | default('/images/jeep-wrangler-im-naturparkzentrum-gymnicher-muehle-in-erftstadt.jpg') | replace({'/images': 'images'})) %}
 
 <!DOCTYPE html>
@@ -88,14 +87,14 @@
                             {% block navigation %}
                                 {% include 'sidebar/navigation.html.twig' %}
                             {% endblock %}
-                            {% block leasing %}
-                                {% include 'sidebar/leasing.html.twig' %}
+                            {% block instagram %}
+                                {% include 'sidebar/instagram.html.twig' %}
                             {% endblock %}
                             {% block youtube %}
                                 {% include 'sidebar/youtube.html.twig' %}
                             {% endblock %}
-                            {% block social %}
-                                {% include 'sidebar/social.html.twig' %}
+                            {% block facebook %}
+                                {% include 'sidebar/facebook.html.twig' %}
                             {% endblock %}
                             {% block motorpool %}
                                 {% include 'sidebar/motorpool.html.twig' %}

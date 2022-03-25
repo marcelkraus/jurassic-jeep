@@ -124,13 +124,13 @@ aside {
                             padding-left: 3.75rem;
                         }
                         &:hover {
-                            background-color: $secondary;
+                            background-color: $primary;
                             color: $white;
                         }
                     }
                     &-active {
                         a {
-                            background-color: $secondary;
+                            background-color: $primary;
                             color: white;
                         }
                     }
