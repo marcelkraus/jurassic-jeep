@@ -3,6 +3,7 @@
 namespace App\Form\Type;
 
 use App\Entity\ContactRequest;
+use Gregwar\CaptchaBundle\Type\CaptchaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -39,6 +40,7 @@ class ContactRequestType extends AbstractType {
                     'placeholder' => 'z.B. „Sie sollten hierher kommen, um mich gegen diese Figuren zu verteidigen – und der einzige der jetzt auf meiner Seite ist, ist der blutsaugende Anwalt!“ :)'
                 ],
             ])
+            ->add('captcha', CaptchaType::class)
             ->add('send', SubmitType::class, [
                 'label' => 'Nachricht senden'
             ])
