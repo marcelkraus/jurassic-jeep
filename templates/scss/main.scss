@@ -357,6 +357,13 @@ main {
             button {
                 margin-bottom: 1rem;
             }
+            #contact_request_captcha {
+                margin-bottom: 0.5rem;
+            }
+            .captcha_image {
+                margin-bottom: 1rem;
+                border: $input-border-width solid $input-border-color;
+            }
         }
         .card {
             background-color: $white;

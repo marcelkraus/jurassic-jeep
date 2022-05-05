@@ -40,7 +40,15 @@ class ContactRequestType extends AbstractType {
                     'placeholder' => 'z.B. „Sie sollten hierher kommen, um mich gegen diese Figuren zu verteidigen – und der einzige der jetzt auf meiner Seite ist, ist der blutsaugende Anwalt!“ :)'
                 ],
             ])
-            ->add('captcha', CaptchaType::class)
+            ->add('captcha', CaptchaType::class, [
+                'label' => 'Schutz vor Spam-Nachrichten',
+                'length' => 4,
+                'bypass_code' => 'the_magic_word',
+                'charset' => '0123456789',
+                'background_color' => [255, 255, 255],
+                'invalid_message' => 'Die eingegebene Zahlenfolge ist leider falsch.',
+                'attr' => ['placeholder' => 'Bitte gebe die unten dargestellte Zahlenfolge ein'],
+            ])
             ->add('send', SubmitType::class, [
                 'label' => 'Nachricht senden'
             ])
