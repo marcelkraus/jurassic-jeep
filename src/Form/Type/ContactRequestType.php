@@ -15,7 +15,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 class ContactRequestType extends AbstractType {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
-        $builder
+        $form = $builder
             ->add('firstName', TextType::class, [
                 'label' => 'Vorname',
                 'attr' => ['placeholder' => 'z.B. John'],
@@ -40,7 +40,11 @@ class ContactRequestType extends AbstractType {
                     'placeholder' => 'z.B. „Sie sollten hierher kommen, um mich gegen diese Figuren zu verteidigen – und der einzige der jetzt auf meiner Seite ist, ist der blutsaugende Anwalt!“ :)'
                 ],
             ])
-            ->add('captcha', CaptchaType::class, [
+        ;
+        
+        if ($options['environment'] == "prod") {
+            // Add captcha for production environment only.
+            $form->add('captcha', CaptchaType::class, [
                 'label' => 'Schutz vor Spam-Nachrichten',
                 'length' => 4,
                 'bypass_code' => 'the_magic_word',
@@ -48,8 +52,10 @@ class ContactRequestType extends AbstractType {
                 'background_color' => [255, 255, 255],
                 'invalid_message' => 'Die eingegebene Zahlenfolge ist leider falsch.',
                 'attr' => ['placeholder' => 'Bitte gebe die unten dargestellte Zahlenfolge ein'],
-            ])
-            ->add('send', SubmitType::class, [
+            ]);
+        }
+        
+        $form->add('send', SubmitType::class, [
                 'label' => 'Nachricht senden'
             ])
         ;
@@ -59,6 +65,10 @@ class ContactRequestType extends AbstractType {
     {
         $resolver->setDefaults([
             'data_class' => ContactRequest::class,
+            'environment' => 'prod',
         ]);
+        
+        $resolver->setRequired('environment');
+        $resolver->setAllowedTypes('environment', 'string');
     }
 }

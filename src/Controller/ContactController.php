@@ -16,7 +16,9 @@ class ContactController extends AbstractController
     {
         $contactRequest = new ContactRequest();
 
-        $form = $this->createForm(ContactRequestType::class, $contactRequest);
+        $form = $this->createForm(ContactRequestType::class, $contactRequest, [
+            'environment' => $this->getParameter('kernel.environment'),
+        ]);
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
