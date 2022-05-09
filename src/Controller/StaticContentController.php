@@ -7,6 +7,11 @@ use Symfony\Component\HttpFoundation\Response;
 
 class StaticContentController extends AbstractController
 {
+    public function events(): Response
+    {
+        return $this->render('content/events.html.twig');
+    }
+
     public function homepage(): Response
     {
         return $this->render('content/homepage.html.twig');

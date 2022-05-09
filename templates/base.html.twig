@@ -84,21 +84,10 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <aside>
-                            {% block navigation %}
-                                {% include 'sidebar/navigation.html.twig' %}
-                            {% endblock %}
-                            {% block instagram %}
-                                {% include 'sidebar/instagram.html.twig' %}
-                            {% endblock %}
-                            {% block youtube %}
-                                {% include 'sidebar/youtube.html.twig' %}
-                            {% endblock %}
-                            {% block facebook %}
-                                {% include 'sidebar/facebook.html.twig' %}
-                            {% endblock %}
-                            {% block motorpool %}
-                                {% include 'sidebar/motorpool.html.twig' %}
-                            {% endblock %}
+                            {% include 'sidebar/navigation.html.twig' %}
+                            {% include 'sidebar/next-event.html.twig' %}
+                            {% include 'sidebar/social-media.html.twig' %}
+                            {% include 'sidebar/motorpool.html.twig' %}
                         </aside>
                     </div>
                     <div class="col-lg-9">

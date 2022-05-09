@@ -98,10 +98,34 @@ aside {
     margin: 2.5rem 0;
     .sidebar-element {
         margin: 2.5rem 1.25rem;
+
+        #next-event {
+            p {
+                margin: 0;
+            }
+            .heading {
+                color: $primary;
+                font-size: 1.5rem;
+                margin-bottom: 1.25rem;
+            }
+            .event {
+                .date {
+                    color: $primary;
+                }
+                .title {
+                    font-weight: bold;
+                }
+            }
+            .more a {
+                text-decoration: none;
+            }
+        }
         .lead {
             color: $primary;
+            font-size: 1.5rem;
             margin-bottom: 1.25rem;
         }
+        
         nav {
             .primary-menu {
                 margin-left: -1.25rem;
@@ -383,6 +407,10 @@ main {
                     margin-left: 1.25rem;
                 }
             }
+        }
+        .private-badge {
+            @extend .badge;
+            background-color: $secondary;
         }
     }
     footer {

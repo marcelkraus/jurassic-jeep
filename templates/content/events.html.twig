@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% set title            = 'Anstehende Events meines „Jurassic Park“-Jeeps' %}
+{% set description      = 'Übersicht aller anstehender Events, an denen mein „Jurassic Park“-Jeep teilnimmt. „Meet the Jeep“ – ich freue mich auf deinen Besuch!' %}
+{% set activeNavElement = 'events' %}
+{% set mood_image_src   = '/images/jurassic-park-jeep-im-technik-museum-speyer.jpg' %}
+{% set mood_image_alt   = 'Ein „Jurassic Park“-Jeep, präsentiert beim Cosplay-Wochenende 2021 im Technik Museum Speyer; im Hintergrund befinden sich Turbinen und ein Flugzeug' %}
+
+{% block article %}
+    <article>
+        <div class="heading">
+            <h1>Events</h1>
+            <h2>Der Jeep vor Ort</h2>
+        </div>
+        <table class="table">
+            <caption>Sofern nicht anders angegeben, sind alle Events öffentlich (Eintrittspreise können anfallen).</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Datum</th>
+                    <th scope="col">Veranstaltung</th>
+                </tr>
+            </thead>
+            <tbody>
+                {#
+                <tr>
+                    <td>
+                        11. bis 12. Juni 2022<br/>
+                        16:30 Uhr bis 21:00 Uhr<br/>
+                        KINOPOLIS Bonn-Bad Godesberg
+                    </td>
+                    <td>
+                        <strong>Kinostart von „Jurassic World: Ein neues Zeitalter“</strong><br/>
+                        Zum Startwochenende des dritten Teils der „Jurassic World“-Reihe steht der Jeep vor den Türen des KINOPOLIS als Fotomotiv zur Verfügung.
+                    </td>
+                </tr>
+                #}
+                <tr>
+                    <td>
+                        18. Juni 2022<br/>
+                        ganztägig</br>
+                        Losheim am See
+                    </td>
+                    <td>
+                        <span class="private-badge">Privat</span><br/>
+                        <strong>Hochzeit von Valerie und Florian</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        16. Juli 2022<br/>
+                        ganztägig</br>
+                        Elspe (Karl May Festspiele)
+                    </td>
+                    <td>
+                        <strong>Mitglieder-Treffen des Project-K.I.T.T. e.V.</strong><br/>
+                        Erlebe den Jeep – umgeben von K.I.T.T.-Replicas aus „Knight Rider“ – bei den Karl-May-Festspielen in Elspe.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        24. bis 25. September 2022<br/>
+                        ganztägig</br>
+                        Speyer (Technik Museum)
+                    </td>
+                    <td>
+                        <strong>Science-Fiction-Treffen im Technik-Museum Speyer</strong><br/>
+                        Das Technik Museum lädt ein, der Jeep kommt – wie im letzen Jahr sind wir beim Science-Fiction-Treffen (und Cosplay-Wochenende) in Speyer am Start.
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </article>
+{% endblock %}
