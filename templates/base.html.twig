@@ -1,7 +1,7 @@
 {% set social_facebook    = "https://www.facebook.com/jurassicjeep.de" %}
 {% set social_instagram   =  "https://www.instagram.com/jurassicjeep.de/" %}
 {% set social_youtube     = "https://www.youtube.com/channel/UCDJXUi8NY3lgLxh1_fcDNog" %}
-{% set mood_image_url     = url('homepage') ~ (mood_image_src | default('/images/jeep-wrangler-im-naturparkzentrum-gymnicher-muehle-in-erftstadt.jpg') | replace({'/images': 'images'})) %}
+{% set mood_image_url     = url('homepage') ~ (mood_image_src) %}
 
 <!DOCTYPE html>
 
@@ -39,7 +39,7 @@
         <meta property="og:site_name" content="Jurassic Jeep">
         <meta property="og:title" content="{{ title }}">
         <meta property="og:image" content="{{ mood_image_url }}">
-        <meta property="og:image:alt" content="{{ mood_image_alt | default('Ein „Jurassic Park“-Jeep im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}">
+        <meta property="og:image:alt" content="{{ mood_image_alt }}">
         <meta property="og:description" content="{{ description }}">
         {% if app.environment == "prod" %}
             <script type="text/javascript">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="mood-image">
-                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt | default('Ein „Jurassic Park“-Jeep im Naturparkzentrum Gymnicher Mühle in Erftstadt') }}" class="img-fluid" />
+                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt }}" class="img-fluid" />
                     </div>
                 </header>
                 <div class="row">
