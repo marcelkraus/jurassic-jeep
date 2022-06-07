@@ -274,135 +274,135 @@ main {
             margin-left: 5rem;
             margin-right: 5rem;
         }
+    }
+    a {
+        color: $primary;
+        text-decoration: none;
+    }
+    .img-thumbnail {
+        border-bottom-right-radius: 2rem;
+    }
+    .inset-left {
+        @include media-breakpoint-up(lg) {
+            margin-left: -7.75rem !important;
+        }
+    }
+    .inset-right {
+        @include media-breakpoint-up(lg) {
+            margin-right: -7.75rem !important;
+        }
+    }
+    .cta-button {
+        text-align: center;
+        margin-top: 2rem !important;
         a {
-            color: $primary;
-            text-decoration: none;
-        }
-        .img-thumbnail {
-            border-bottom-right-radius: 2rem;
-        }
-        .inset-left {
-            @include media-breakpoint-up(lg) {
-                margin-left: -7.75rem !important;
-            }
-        }
-        .inset-right {
-            @include media-breakpoint-up(lg) {
-                margin-right: -7.75rem !important;
-            }
-        }
-        .cta-button {
-            text-align: center;
-            margin-top: 2rem !important;
-            a {
-                background-color: $white;
-                border: 1px solid $primary;
-                border-bottom-right-radius: 1rem;
-                color: $primary;
-                padding: 1rem;
-                &:active,
-                &:hover {
-                    background-color: $primary;
-                    color: $white;
-                }
-            }
-        }
-        h3, h4 {
-            margin-bottom: $paragraph-margin-bottom;
-        }
-        p:last-child {
-            margin: 0;
-        }
-        sup {
-            color: $primary;
-            font-weight: bold;
-        }
-        .brand {
-            color: $primary;
-            font-variant: small-caps;
-            font-weight: bold;
-        }
-        .heading {
-            margin: 2.5rem;
-            margin-top: 0;
-            text-align: center;
-            h1 {
-                &.default {
-                    &:after {
-                        display: block;
-                        content:"";
-                        background-color: $secondary;
-                        height: 0.1rem;
-                        margin-top: 1.25rem;
-                    }
-                }
-            }
-            h2 {
-                color: $secondary;
-                text-transform: uppercase;
-                font-weight: bold;
-                overflow: hidden;
-                text-align: center;
-                margin-top: 1.25rem;
-                @include media-breakpoint-up(lg) {
-                    &:before,
-                    &:after {
-                        background-color: $secondary;
-                        content: "";
-                        display: inline-block;
-                        height: 0.1rem;
-                        position: relative;
-                        vertical-align: middle;
-                        width: 50%;
-                    }
-                    &:before {
-                        right: 0.5rem;
-                        margin-left: -50%;
-                    }
-                    &:after {
-                        left: 0.5rem;
-                        margin-right: -50%;
-                    }
-                }
-            }
-        }
-        form {
-            input,
-            textarea,
-            button {
-                margin-bottom: 1rem;
-            }
-            #contact_request_captcha {
-                margin-bottom: 0.5rem;
-            }
-            .captcha_image {
-                margin-bottom: 1rem;
-                border: $input-border-width solid $input-border-color;
-            }
-        }
-        .card {
             background-color: $white;
-            border-bottom-right-radius: 2rem;
-            border-color: $secondary;
-            margin-bottom: 1.25rem;
-            @include media-breakpoint-up(lg) {
-                width: 15rem;
-                &-left {
-                    float: left;
-                    margin-left: -7.75rem;
-                    margin-right: 1.25rem;
-                }
-                &-right {
-                    float: right;
-                    margin-right: -7.75rem;
-                    margin-left: 1.25rem;
+            border: 1px solid $primary;
+            border-bottom-right-radius: 1rem;
+            color: $primary;
+            padding: 1rem;
+            &:active,
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    h3, h4 {
+        margin-bottom: $paragraph-margin-bottom;
+    }
+    p:last-child {
+        margin: 0;
+    }
+    sup {
+        color: $primary;
+        font-weight: bold;
+    }
+    .brand {
+        color: $primary;
+        font-variant: small-caps;
+        font-weight: bold;
+    }
+    .heading {
+        margin: 2.5rem;
+        margin-top: 0;
+        text-align: center;
+        h1 {
+            &.default {
+                &:after {
+                    display: block;
+                    content:"";
+                    background-color: $secondary;
+                    height: 0.1rem;
+                    margin-top: 1.25rem;
                 }
             }
         }
-        .private-badge {
-            @extend .badge;
-            background-color: $secondary;
+        h2 {
+            color: $secondary;
+            text-transform: uppercase;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: center;
+            margin-top: 1.25rem;
+            @include media-breakpoint-up(lg) {
+                &:before,
+                &:after {
+                    background-color: $secondary;
+                    content: "";
+                    display: inline-block;
+                    height: 0.1rem;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 50%;
+                }
+                &:before {
+                    right: 0.5rem;
+                    margin-left: -50%;
+                }
+                &:after {
+                    left: 0.5rem;
+                    margin-right: -50%;
+                }
+            }
         }
+    }
+    form {
+        input,
+        textarea,
+        button {
+            margin-bottom: 1rem;
+        }
+        #contact_request_captcha {
+            margin-bottom: 0.5rem;
+        }
+        .captcha_image {
+            margin-bottom: 1rem;
+            border: $input-border-width solid $input-border-color;
+        }
+    }
+    .card {
+        background-color: $white;
+        border-bottom-right-radius: 2rem;
+        border-color: $secondary;
+        margin-bottom: 1.25rem;
+        @include media-breakpoint-up(lg) {
+            width: 15rem;
+            &-left {
+                float: left;
+                margin-left: -7.75rem;
+                margin-right: 1.25rem;
+            }
+            &-right {
+                float: right;
+                margin-right: -7.75rem;
+                margin-left: 1.25rem;
+            }
+        }
+    }
+    .private-badge {
+        @extend .badge;
+        background-color: $secondary;
     }
     footer {
         color: $white;

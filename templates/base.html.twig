@@ -59,63 +59,51 @@
     </head>
     <body>
         <div class="container">
-            <div id="canvas">
-                <header>
-                    <div class="header-menu">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="{{ path('homepage') }}" title="Zurück zur Startseite"><img src="/images/logo.png" alt="„Jurassic Jeep“ Logo" /></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="d-none d-sm-block">
-                                    <div class="social">
-                                        <a href="{{ social_facebook }}" title="Folge dem Jeep auf Facebook"><i class="bi bi-facebook"></i></a>
-                                        <a href="{{ social_instagram }}" title="Folge dem Jeep auf Instagram"><i class="bi bi-instagram"></i></a>
-                                        <a href="{{ social_youtube }}" title="Folge dem Jeep auf YouTube"><i class="bi bi-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+            {% block canvas %}
+                <div id="canvas">
+                    {% block header %}
+                        {% include 'header.html.twig' %}
+                    {% endblock %}
+                    <div class="row">
+                        <div class="col-lg-3">
+                            {% block sidebar %}
+                                <aside>
+                                    {% include 'sidebar/navigation.html.twig' %}
+                                    {% include 'sidebar/next-event.html.twig' %}
+                                    {% include 'sidebar/social-media.html.twig' %}
+                                    {% include 'sidebar/motorpool.html.twig' %}
+                                </aside>
+                            {% endblock %}
+                        </div>
+                        <div class="col-lg-9">
+                            {% block content %}
+                                <main>
+                                    {% block article %}
+                                        <article>
+                                            ((Placeholder))
+                                        </article>
+                                    {% endblock %}
+                                    <footer>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p>&copy; 2021 – {{ "now"|date("Y") }} Marcel Kraus, Erftstadt.</p>
+                                            </div>
+                                            <div class="col-4">
+                                            <nav>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
+                                                    <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <p>„Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Mein „Jurassic Park“-Jeep ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.</p>
+                                    </footer>
+                                </main>
+                            {% endblock %}
                         </div>
                     </div>
-                    <div class="mood-image">
-                        <img src="{{ mood_image_url }}" alt="{{ mood_image_alt }}" class="img-fluid" />
-                    </div>
-                </header>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <aside>
-                            {% include 'sidebar/navigation.html.twig' %}
-                            {% include 'sidebar/next-event.html.twig' %}
-                            {% include 'sidebar/social-media.html.twig' %}
-                            {% include 'sidebar/motorpool.html.twig' %}
-                        </aside>
-                    </div>
-                    <div class="col-lg-9">
-                        <main>
-                            {% block article %}
-                                <article>
-                                    ((Placeholder))
-                                </article>
-                            {% endblock %}
-                            <footer>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <p>&copy; 2021 – {{ "now"|date("Y") }} Marcel Kraus, Erftstadt.</p>
-                                    </div>
-                                    <div class="col-4">
-                                    <nav>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
-                                            <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <p>„Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Mein „Jurassic Park“-Jeep ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.</p>
-                            </footer>
-                        </main>
-                    </div>
                 </div>
-            </div>
+            {% endblock %}
         </div>
     </body>
 </html>
