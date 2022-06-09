@@ -8,30 +8,36 @@
 {% block canvas %}
     <div id="canvas">
         {{ include('header.html.twig', { 'show_social_menu': false, 'remove_border': true }) }}
-        <main style="margin-top: 4rem;">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <p style="margin-bottom: 0.5rem;"><a href="{{ social_facebook }}" title="Folge dem Jeep auf Facebook"><img src="/images/social-media-icons/facebook.svg" width="80" height="80"></a></p>
-                        <h3 style="color: #136EB2">@jurassicjeep.de</h3>
+        <main>
+            <article style="border: none;">
+                <div class="cta-button" style="margin-top: 2.25rem; margin-bottom: 0.25rem;">
+                    <a href="{{ path('homepage') }}">Weiter zur Homepage…</a>
+                </div>
+                <div class="heading" style="margin-top: 4.25rem; margin-bottom: 2rem;">
+                    <h1>Jetzt folgen!</h1>
+                    <h2>Folge dem Jeep und bleibe immer informiert</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <p style="margin-bottom: 0.5rem;"><a href="{{ social_facebook }}" title="Folge dem Jeep auf Facebook"><img src="/images/social-media-icons/facebook.svg" width="80" height="80"></a></p>
+                            <h3 style="color: #136EB2">@jurassicjeep.de</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <p style="margin-bottom: 0.5rem;"><a href="{{ social_instagram }}" title="Folge dem Jeep auf Instagram"><img src="/images/social-media-icons/instagram.svg" width="80" height="80"></a></p>
+                            <h3 style="color: #E95399">@jurassicjeep.de</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <p style="margin-bottom: 0.5rem;"><a href="{{ social_youtube }}" title="Folge dem Jeep auf YouTube"><img src="/images/social-media-icons/youtube.svg" width="80" height="80"></a></p>
+                            <h3 style="color: #AC2702">Jurassic Jeep</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <p style="margin-bottom: 0.5rem;"><a href="{{ social_instagram }}" title="Folge dem Jeep auf Instagram"><img src="/images/social-media-icons/instagram.svg" width="80" height="80"></a></p>
-                        <h3 style="color: #E95399">@jurassicjeep.de</h3>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <p style="margin-bottom: 0.5rem;"><a href="{{ social_youtube }}" title="Folge dem Jeep auf YouTube"><img src="/images/social-media-icons/youtube.svg" width="80" height="80"></a></p>
-                        <h3 style="color: #AC2702">Jurassic Jeep</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-button">
-                <a href="{{ path('homepage') }}">Zur Homepage</a>
-            </div>
+            </article>
         </main>
     </div>
 {% endblock %}
