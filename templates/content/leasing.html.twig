@@ -13,100 +13,61 @@
             <h2>Das „Jurassic Park“-Feeling selbst erleben</h2>
         </div>
         {% include 'partials/card.html.twig' with { alignment: 'left', url: '/images/fahrzeug/jurassic-park-logo-auf-der-tuere-eines-jeep-wrangler-sahara.jpg', alt: 'Das Logo des „Jurassic Park“ auf der Seitentüre eines Jeep Wrangler Sahara von 1993', caption: 'Die Türe mit dem weltbekanntem Logo öffnen und mitfahren? Das ist jetzt möglich.' } %}
-        <p>Sehr frei nach John Hammond zitiert möchte ich „<em>jedem auf der Welt das Recht geben, sich an diesem Fahrzeug zu erfreuen</em>“.</p>
-        <p>Generell ist mein Jeep mehrmals pro Jahr auf Comic-Conventions und anderen Events vertreten. Hier bietet sich die meist kostenlose Gelegenheit, das Fahrzeug zu sehen, Fotos zu machen und (in den meisten Fällen) auch einmal selber Platz zu nehmen.</p>
-        <p>Dennoch wurde ich mehrfach angesprochen, ob man das Fahrzeug nicht auch mieten könnte. Ja, man kann: Für Rundfahrten, Hochzeiten &amp; Events aller Art.</p>
+        <p>Sehr frei nach John Hammond zitiert möchte ich „<em>jedem auf der Welt die Möglichkeit geben, sich an diesem Fahrzeug zu erfreuen</em>“.</p>
+        <p>Generell ist mein Jeep mehrmals pro Jahr auf <a href="{{ path('events') }}">verschiedenen Events</a> vertreten. Hier bietet sich in den meisten Fällen die Gelegenheit, das Fahrzeug zu sehen und Fotos zu machen.</p>
+        <p>Dennoch wurde ich mehrfach angesprochen, ob man das Fahrzeug nicht auch mieten könnte. Ab sofort ist dies möglich: Für Rundfahrten, Hochzeiten &amp; Events aller Art.</p>
         <p>Du möchtest das Feeling eines Besuchs im „Jurassic Park“? Dann lass ich von deinem Fahrer sicher von A nach B bringen. Deine Fragen zum Jeep, zu den Filmen und allen Hintergründen beantwortet er dir dabei gerne.</p>
         <p>Auch für stationäre Zwecke ist der Jeep zu mieten: Als Fotopoint auf deinem Event zieht dieser Eyecatcher garantiert alle Blicke auf sich – egal ob Hochzeit oder Tag der offenen Tür.</p>
-        <h3>Auszug der Preisliste für die Saison 2022</h3>
-        <h4>Angebote auf Stundenbasis</h4>
+        <h3>Angebote der Saison 2022</h3>
         <table class="table">
-            <caption>Alle Preise verstehen sich inkl. 19 % Mehrwertsteuer. Ab einer Mietdauer von sieben Stunden gilt der Tagestarif. Angebote für Geschäftskunden auf Anfrage.</caption>
+            <caption>Eine vollständige Preisliste mit zusätzlichen Informationen kannst du bei Interesse über das <a href="{{ path('contact') }}?ref=price-list">über das Kontaktformular anfordern</a>.</caption>
             <thead>
                 <tr>
-                    <th scope="col">&nbsp;</th>
-                    <th class="text-end" scope="col">Privatpersonen &amp; Gemeinnützige Organisationen</th>
+                    <th scope="col">Angebot</th>
+                    <th scope="col">Abrechnung</th>
+                    <th scope="col">Leistungen</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td><strong>On&nbsp;Display</strong></td>
+                    <td>Nach&nbsp;Stunde</td>
                     <td>
-                        <strong>„On Display“ (stehend)</strong><br/>
-                        inkl. Ansprechpartner vor Ort
-                    </td>
-                    <td class="text-end">
-                        69 € pro Stunde<br/>
-                        449 € pro Tag
+                        Stehend, inkl. Absperrung<br/>
+                        inkl. Ansprechpartner vor Ort<br/>
+                        inkl. An-/Abfahrt bis 30 km<br/>
+                        zzgl. weiterer An-/Abfahrtskosten
                     </td>
                 </tr>
                 <tr>
+                    <td><strong>Rolling</strong></td>
+                    <td>Nach&nbsp;Stunde</td>
                     <td>
-                        <strong>„Rolling (fahrend)</strong><br/>
-                        inkl. Fahrer
-                    </td>
-                    <td class="text-end">
-                        79 € pro Stunde<br/>
-                        zzgl. Fahrkosten
+                        Fahrend, für max. drei Passagiere<br/>
+                        inkl. Fahrer<br/>
+                        inkl. An-/Abfahrt bis 30 km<br/>
+                        zzgl. weiterer An-/Abfahrtskosten sowie der reinen Fahrkosten
                     </td>
                 </tr>
                 <tr>
+                    <td><strong>Grand&nbsp;Tour</strong></td>
+                    <td>Paketpreis</td>
                     <td>
-                        <strong>Fahrkosten</strong><br/>
-                        Abrechnung nach km, An- und Abfahrt bis 50 km frei
-                    </td>
-                    <td class="text-end">
-                        0,39 € pro km
-                    </td>
+                    Geführte Tour ab 50374 Erftstadt<br/>
+                    Dauer ca. 1,5 Stunden (45-60 min. reine Fahrzeit) für max. drei Passagiere</td>
                 </tr>
                 <tr>
+                    <td><strong>Just&nbsp;Married</strong></td>
+                    <td>Paketpreis</td>
                     <td>
-                        <strong>Begleitpersonen</strong><br/>
-                        max. zwei Personen möglich
+                        Max. einstündige Hochzeitsfahrt für das Brautpaar und drei Stunden „On Display“ als Fotopoint<br/>
+                        inkl. An-/Abfahrt und Fahrkosten bis 100 km<br/>
                     </td>
-                    <td class="text-end">
-                        kostenfrei
-                    </td>
-                </tr>
             </tbody>
         </table>
-        <h4>Erlebnispakete</h4>
-        <table class="table table-sm">
-            <caption>Alle Preise verstehen sich inkl. 19 % Mehrwertsteuer.</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Paket</th>
-                    <th class="text-end" scope="col">Privatpersonen</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <strong>„The Grand Tour“</strong><br/>
-                        Geführte Tour („Rolling“) ab Erftstadt, Dauer ca. 1,5 Stunden (45-60 Min. Fahrzeit, 30-45 Min. Zeit für Fotos und Fragen).
-                    </td>
-                    <td class="text-end">
-                        119 € pro Paket
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>„Just Married“</strong><br/>
-                        Max. einstündige Hochzeitsfahrt („Rolling“) und drei Stunden stehend („On Display“) als Foto-Point<br/>
-                        Fahrkosten bis 100 km (inkl. An- und Abfahrt) frei
-                    </td>
-                    <td class="text-end">
-                        299 € pro Paket
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Vollständige Preisliste im PDF-Format</h3>
-        {% include 'partials/card.html.twig' with { alignment: 'right', url: '/images/fahrzeug/barbasol-dose-neben-der-seilwinde-auf-einem-jeep-wrangler-sahara.jpg', alt: 'Eine Dose Rasierschaum im alten „Barbasol“-Design, wie sie im Film „Jurassic Park“ verwendet wurde.', caption: 'Natürlich auch mit an Bord: Eine ganz spezielle Sorte Rasierschaum.' } %}
-        <p>Diese Seite beinhaltet einen <em>Auszug</em> der Preisliste der Saison 2022.</p>
-        <p>Eine vollständige Preisliste mit zusätzlichen Informationen kannst du <a href="{{ path('contact') }}?ref=price-list">über das Kontaktformular anfordern</a>.</p>
         <h3>Jetzt unverbindlich anfragen</h3>
-        <p>Du bist an einer Buchung interessiert und möchtest gerne unverbindlich einen Termin und Gesamtpreis anfragen? Ich freue mich!</p>
-        <p>Dann nutze jetzt das Kontaktformular, um mit mir in in Kontakt zu treten, schreibe mir eine E-Mail (hallo (at) jurassicjeep.de) oder nutze die Kontaktmöglichkeiten der sozialen Netzwerke.</p>
+        <p>Du bist am Jeep interessiert und möchtest gerne unverbindlich einen Termin oder ein individuelles Angebot anfragen? Ich freue mich!</p>
+        <p>Nutze bitte das Kontaktformular, um mit mir in in Kontakt zu treten, schreibe mir eine E-Mail (hallo (at) jurassicjeep.de) oder nutze die Kontaktmöglichkeiten der sozialen Netzwerke.</p>
         <p class="cta-button">
             <a href="{{ path('contact') }}?ref=leasing">Kontaktformular öffnen</a>
         </p>
