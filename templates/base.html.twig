@@ -76,28 +76,29 @@
                             {% endblock %}
                         </div>
                         <div class="col-lg-9">
-                            {% block content %}
+                            {% block main %}
                                 <main>
                                     {% block article %}
                                         <article>
                                             ((Placeholder))
                                         </article>
                                     {% endblock %}
-                                    <footer>
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <p>&copy; 2021 – {{ "now"|date("Y") }} Marcel Kraus, Erftstadt.</p>
+                                    {% block footer %}
+                                        <footer>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    &copy; 2021 – {{ "now"|date("Y") }} Marcel Kraus, Erftstadt.
+                                                </div>
+                                                <div class="col-4">
+                                                    <ul>
+                                                        <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
+                                                        <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="col-4">
-                                            <nav>
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item"><a href="{{ path('imprint') }}">Impressum</a></li>
-                                                    <li class="list-inline-item"><a href="{{ path('privacy') }}">Datenschutz</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <p>„Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Mein „Jurassic Park“-Jeep ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.</p>
-                                    </footer>
+                                            „Jurassic Park“ und „Jurassic World“ sind eingetragene Markenzeichen der Universal City Studios LLC und/oder Amblin Entertainment, Inc., die dieses Projekt nicht offiziell unterstützen. Mein „Jurassic Park“-Jeep ist ein authentischer Nachbau und wurde nicht bei den Dreharbeiten der Filme verwendet.
+                                        </footer>
+                                    {% endblock %}
                                 </main>
                             {% endblock %}
                         </div>
