@@ -31,7 +31,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: Oxygen, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     #canvas {
         min-height: 100vh;
         background: $white;
@@ -83,27 +83,6 @@ header {
 aside {
     .sidebar-element {
         margin: 2.5rem 2.5rem;
-        .next-event {
-            p {
-                margin: 0;
-            }
-            .heading {
-                color: $brand-primary;
-                font-size: 1.5rem;
-                margin-bottom: 1.25rem;
-            }
-            .event {
-                .date {
-                    color: $brand-primary;
-                }
-                .title {
-                    font-weight: bold;
-                }
-            }
-            .more a {
-                text-decoration: none;
-            }
-        }
         .lead {
             color: $brand-primary;
             font-size: 1.5rem;
@@ -252,15 +231,19 @@ main {
         .brand {
             color: $brand-primary;
             font-variant: small-caps;
-            font-weight: bold;
+            font-weight: 700;
         }
         .heading {
             margin-bottom: 2.5rem;
             padding-bottom: 1.25rem;
             border-bottom: 0.1rem solid $brand-secondary;
             text-align: right;
+            h1 {
+                font-weight: 300;
+            }
             h2 {
                 color: $brand-secondary;
+                font-weight: 300;
             }
         }
         form {
