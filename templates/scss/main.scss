@@ -3,6 +3,8 @@
 $brand-primary: #c01d0c; // Performance Red
 $brand-secondary: #a2a288; // Sand Beige
 
+$primary: $brand-primary; // Hack to make sure the primary color is set to the brand primary color.
+
 $enable-rounded: false;
 $line-height-sm: 1.25;
 $line-height-base: 1.75;
@@ -83,6 +85,9 @@ header {
 aside {
     .sidebar-element {
         margin: 2.5rem 2.5rem;
+        a {
+            text-decoration: none;
+        }
         .lead {
             color: $brand-primary;
             font-size: 1.5rem;
@@ -204,7 +209,6 @@ main {
     }
     article {
         a {
-            color: $brand-primary;
             text-decoration: none;
         }
         .cta-button {
