@@ -46,12 +46,12 @@ class ContactRequestType extends AbstractType {
             // Add captcha for production environment only.
             $form->add('captcha', CaptchaType::class, [
                 'label' => 'Schutz vor Spam-Nachrichten',
-                'length' => 4,
-                'bypass_code' => 'the_magic_word',
-                'charset' => '0123456789',
+                'length' => 6,
+                'bypass_code' => 'the_magic_word_1993_nedry',
+                'charset' => '123456789abcdefghkmnpqrstuvwxyz',
                 'background_color' => [255, 255, 255],
-                'invalid_message' => 'Die eingegebene Zahlenfolge ist leider falsch.',
-                'attr' => ['placeholder' => 'Bitte gebe die unten dargestellte Zahlenfolge ein'],
+                'invalid_message' => 'Die eingegebene Zeichenfolge ist leider falsch.',
+                'attr' => ['placeholder' => 'Bitte gebe die unten dargestellte Zeichenfolge ein'],
             ]);
         }
         
