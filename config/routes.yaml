@@ -10,6 +10,10 @@ contact_confirmation:
     path: /kontakt/nachricht-erhalten
     controller: App\Controller\ContactController::confirmation
 
+events:
+    path: /events
+    controller: App\Controller\StaticContentController::events
+
 history:
     path: /die-historie-des-jeep
     controller: App\Controller\StaticContentController::history
