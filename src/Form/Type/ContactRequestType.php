@@ -3,7 +3,6 @@
 namespace App\Form\Type;
 
 use App\Entity\ContactRequest;
-use Gregwar\CaptchaBundle\Type\CaptchaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -41,20 +40,7 @@ class ContactRequestType extends AbstractType {
                 ],
             ])
         ;
-        
-        if ($options['environment'] == "prod") {
-            // Add captcha for production environment only.
-            $form->add('captcha', CaptchaType::class, [
-                'label' => 'Schutz vor Spam-Nachrichten',
-                'length' => 6,
-                'bypass_code' => 'the_magic_word_1993_nedry',
-                'charset' => '123456789abcdefghkmnpqrstuvwxyz',
-                'background_color' => [255, 255, 255],
-                'invalid_message' => 'Die eingegebene Zeichenfolge ist leider falsch.',
-                'attr' => ['placeholder' => 'Bitte gebe die unten dargestellte Zeichenfolge ein'],
-            ]);
-        }
-        
+
         $form->add('send', SubmitType::class, [
                 'label' => 'Nachricht senden'
             ])
@@ -67,7 +53,7 @@ class ContactRequestType extends AbstractType {
             'data_class' => ContactRequest::class,
             'environment' => 'prod',
         ]);
-        
+
         $resolver->setRequired('environment');
         $resolver->setAllowedTypes('environment', 'string');
     }
