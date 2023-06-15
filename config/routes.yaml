@@ -1,7 +1,3 @@
-campaign_kinopolis_launch_weekend_2022:
-    path: /kinopolis-kinostart-2022
-    controller: App\Controller\CampaignController::kinopolisLaunchWeekend2022
-
 contact:
     path: /kontakt
     controller: App\Controller\ContactController::index
