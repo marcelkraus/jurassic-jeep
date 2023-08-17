@@ -1,4 +1,16 @@
 {
+    "contentful/contentful-bundle": {
+        "version": "7.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "4.0",
+            "ref": "f0b3ffcd60bb909b43a893aec66740c17373c13c"
+        },
+        "files": [
+            "config/packages/contentful.yaml"
+        ]
+    },
     "doctrine/doctrine-bundle": {
         "version": "2.10",
         "recipe": {
