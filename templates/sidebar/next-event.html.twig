@@ -4,7 +4,7 @@
         <p>
             <strong>{{ event.title }}</strong><br/>
             <i class="bi-compass"></i>&nbsp;{{ event.location }}<br/>
-            <i class="bi-clock"></i>&nbsp;{% if event.startDate != event.endDate %}Ab {% endif %}{{ event.startDate | date('d.m.Y') }}{% if event.startDate | date('H:i') != '00:00' %}, {{ event.startDate | date('H:i') }} Uhr{% endif %}
+            <i class="bi-clock"></i>&nbsp;{% if event.startDate != event.endDate %}Ab {% endif %}{{ event.startDate | date('d.m.Y') }}
         </p>
         <div class="cta cta-secondary">
             <a href="{{ path('events') }}" title="Öffne die Übersicht mit allen anstehenden Events">Alle Events</a>

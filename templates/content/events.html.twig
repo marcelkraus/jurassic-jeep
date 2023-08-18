@@ -26,8 +26,8 @@
                         {% for event in events %}
                             <tr>
                                 <td style="white-space: nowrap">
-                                    <p>{{ event.startDate | date('d.m.Y') }}{% if event.startDate | date('H:i') != "00:00" %}, {{ event.startDate | date('H:i') }} Uhr{% endif %} bis<br/>
-                                    {{ event.endDate | date('d.m.Y') }}{% if event.endDate | date('H:i') != "00:00" %}, {{ event.endDate | date('H:i') }} Uhr{% endif %}</p>
+                                    <p>{{ event.startDate | date('d.m.Y') }} bis<br/>
+                                    {{ event.endDate | date('d.m.Y') }}</p>
                                 </td>
                                 <td>
                                     <p><strong>{{ event.title }}</strong><br/>{{ event.location }}</p>
