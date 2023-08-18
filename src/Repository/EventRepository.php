@@ -42,7 +42,7 @@ class EventRepository
         $query
             ->setContentType('event')
             ->where('fields.endDate[gte]', new DateTime())
-            ->orderBy('-fields.startingDate');
+            ->orderBy('-fields.startDate');
 
         return $query;
     }
