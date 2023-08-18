@@ -7,3 +7,6 @@ contentful:
             space: "%env(CONTENTFUL_SPACE_ID)%"
             options:
                 locale: de-DE
+                cache:
+                    runtime: true
+                    content: true
