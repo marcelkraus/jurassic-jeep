@@ -12,26 +12,38 @@
             <h1>Events</h1>
             <h2>Der Jeep vor Publikum</h2>
         </div>
-        <table class="table">
-            <caption>Sofern nicht anders angegeben, sind alle Events öffentlich (Eintrittspreise können anfallen).</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Datum</th>
-                    <th scope="col">Veranstaltung</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        23.&nbsp;und&nbsp;24.&nbsp;September<br/>
-                        Technik Museum Speyer
-                    </td>
-                    <td>
-                        <strong>Science-Fiction-Treffen</strong><br/>
-                        Das Technik Museum lädt ein, der Jeep folgt dieser Einladung – rechtzeitig zum 30. Geburtstag von „Jurassic Park“ sind wir <a href="https://speyer.technik-museum.de/de/science-fiction-treffen" target="_blank">beim Science-Fiction-Treffen in Speyer</a> am Start.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        {% if events.count > 0 %}
+            <div class="table-responsive">
+                <table class="table">
+                    <caption>Sofern nicht anders angegeben, sind alle Events öffentlich zugänglich (aber Eintrittspreise können anfallen).</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Datum</th>
+                            <th scope="col">Veranstaltung</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        {% for event in events %}
+                            <tr>
+                                <td style="white-space: nowrap">
+                                    <p>{{ event.startingDate | date('d.m.Y') }}{% if event.startingDate | date('H:i') != "00:00" %}, {{ event.startingDate | date('H:i') }} Uhr{% endif %} bis<br/>
+                                    {{ event.endDate | date('d.m.Y') }}{% if event.endDate | date('H:i') != "00:00" %}, {{ event.endDate | date('H:i') }} Uhr{% endif %}</p>
+                                </td>
+                                <td>
+                                    <p><strong>{{ event.title }}</strong><br/>{{ event.location }}</p>
+                                    <p>{{ event.summary }}</p>
+                                    {% if event.externalLink %}
+                                        <p><a href="{{ event.externalLink }}" target="_blank" title="Weitere Informationen zum Event „{{ event.title }}“ (Link öffnet in einem neuen Fenster)">Weitere Informationen zum Event &raquo;</a></p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <p>Schade, aber aktuell bleibt der Jeep im Wartungsbunker, denn es sind keine Events mit dem Jeep geplant.</p>
+            <p>Das sollte dich nicht davon abhalten, mich zu kontaktieren, wenn du den Jeep aus der Nähe sehen möchtest. Hast du gesehen, dass <a href="{{ path('leasing') }}"> der Jeep auch vermietet wird?</a></p>
+        {% endif %}
     </article>
 {% endblock %}
