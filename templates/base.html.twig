@@ -68,7 +68,7 @@
                             {% block sidebar %}
                                 <aside>
                                     {% include 'sidebar/navigation.html.twig' %}
-                                    {% include 'sidebar/next-event.html.twig' %}
+                                    {{ render(controller('App\\Controller\\EventController::nextEventIfApplicable')) }}
                                     {% include 'sidebar/social-media.html.twig' %}
                                     {% include 'sidebar/motorpool.html.twig' %}
                                 </aside>

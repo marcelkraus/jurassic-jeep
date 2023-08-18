@@ -1,7 +1,13 @@
-<section class="sidebar-element">
-    <p class="lead">Treffe den Jeep</p>
-    <p>23. und 24. September<br/><strong>Science-Fiction-Treffen im Technik Museum Speyer</strong></p>
-    <div class="cta cta-secondary">
-        <a href="{{ path('events') }}" title="Öffne die Übersicht mit allen anstehenden Events"><i class="bi bi-calendar"></i>&nbsp;Alle Events</a>
-    </div>
-</section>
+{% if event %}
+    <section class="sidebar-element">
+        <p class="lead">Treffe den Jeep</p>
+        <p>
+            <strong>{{ event.title }}</strong><br/>
+            <i class="bi-compass"></i>&nbsp;{{ event.location }}<br/>
+            <i class="bi-clock"></i>&nbsp;{% if event.startingDate != event.endDate %}Ab {% endif %}{{ event.startingDate | date('d.m.Y') }}{% if event.startingDate | date('H:i') != '00:00' %}, {{ event.startingDate | date('H:i') }} Uhr{% endif %}
+        </p>
+        <div class="cta cta-secondary">
+            <a href="{{ path('events') }}" title="Öffne die Übersicht mit allen anstehenden Events">Alle Events</a>
+        </div>
+    </section>
+{% endif %}

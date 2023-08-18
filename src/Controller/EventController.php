@@ -22,7 +22,6 @@ class EventController extends AbstractController
                 ->setContentType('event')
                 ->where('fields.endDate[gte]', new DateTime())
                 ->orderBy('-fields.startingDate');
-
             $events = $client->getEntries($query);
         } catch (NotFoundException $contentfulException) {
             throw new NotFoundHttpException();
@@ -32,4 +31,20 @@ class EventController extends AbstractController
             'events' => $events,
         ]);
     }
+
+    public function nextEventIfApplicable(ClientInterface $client): Response
+    {
+        $query = new Query();
+        $query
+            ->setContentType('event')
+            ->where('fields.endDate[gte]', new DateTime())
+            ->orderBy('-fields.startingDate')
+            ->where('limit', 1);
+        $events = $client->getEntries($query);
+
+        return $this->render('sidebar/next-event.html.twig', [
+            'event' => isset($events[0]) ? $events[0] : null,
+        ]);
+    }
+
 }
