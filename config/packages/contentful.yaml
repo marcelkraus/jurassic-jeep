@@ -5,3 +5,5 @@ contentful:
         main:
             token: "%env(CONTENTFUL_ACCESS_TOKEN)%"
             space: "%env(CONTENTFUL_SPACE_ID)%"
+            options:
+                locale: de-DE

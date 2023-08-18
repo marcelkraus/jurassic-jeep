@@ -8,12 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class StaticContentController extends AbstractController
 {
-    #[Route('/events', name: 'events')]
-    public function events(): Response
-    {
-        return $this->render('content/events.html.twig');
-    }
-
     #[Route('/', name: 'homepage')]
     public function homepage(): Response
     {
