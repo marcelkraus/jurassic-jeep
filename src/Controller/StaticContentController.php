@@ -20,6 +20,12 @@ class StaticContentController extends AbstractController
         return $this->render('content/history.html.twig');
     }
 
+    #[Route('/events', name: 'events')]
+    public function events(): Response
+    {
+        return $this->render('content/events.html.twig');
+    }
+
     #[Route('/den-jeep-mieten', name: 'leasing')]
     public function leasing(): Response
     {

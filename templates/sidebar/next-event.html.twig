@@ -1,13 +1,11 @@
-{% if event %}
-    <section class="sidebar-element">
-        <p class="lead">Treffe den Jeep</p>
-        <p>
-            <strong>{{ event.title }}</strong><br/>
-            <i class="bi-compass"></i>&nbsp;{{ event.location }}<br/>
-            <i class="bi-clock"></i>&nbsp;{% if event.startDate != event.endDate %}Ab {% endif %}{{ event.startDate | date('d.m.Y') }}
-        </p>
-        <div class="cta cta-secondary">
-            <a href="{{ path('events') }}" title="Öffne die Übersicht mit allen anstehenden Events">Alle Events</a>
-        </div>
-    </section>
-{% endif %}
+<section class="sidebar-element">
+    <p class="lead">Treffe den Jeep</p>
+    <p>
+        <strong>(Event: Title)</strong><br/>
+        <i class="bi-compass"></i>&nbsp;(Event: Location)<br/>
+        <i class="bi-clock"></i>&nbsp;(Event: Date)
+    </p>
+    <div class="cta cta-secondary">
+        <a href="{{ path('events') }}" title="Öffne die Übersicht mit allen anstehenden Events">Alle Events</a>
+    </div>
+</section>
