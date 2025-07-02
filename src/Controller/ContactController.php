@@ -20,7 +20,6 @@ class ContactController extends AbstractController
 
         $form = $this->createForm(ContactRequestType::class, $contactRequest, [
             'antispam_profile' => 'default',
-            'environment' => $this->getParameter('kernel.environment'),
         ]);
 
         $form->handleRequest($request);
